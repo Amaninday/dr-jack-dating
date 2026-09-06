@@ -1,0 +1,3366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+<title>Book a Private Session | Rabbi Dr. Jack Cohen</title>
+<meta
+        name="description"
+        content="Request a private dating, matchmaking, relationship clarity, marriage, pre-marriage, or speaking session with Rabbi Dr. Jack Cohen."
+    >
+<link rel="icon" type="image/png" href="assets/images/branding/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+<link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800;900&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+<link
+        rel="stylesheet"
+        href="assets/css/style.css"
+    >
+<style>
+
+        :root {
+
+            --booking-navy: #031522;
+            --booking-navy-2: #082c47;
+
+            --booking-gold: #d5a74c;
+            --booking-gold-light: #e6bd67;
+
+            --booking-cream: #f4f0e8;
+
+            --booking-white: #ffffff;
+
+            --booking-ink: #08263d;
+
+            --booking-body: #5e6a72;
+
+            --booking-line:
+                rgba(8, 38, 61, 0.13);
+
+            --booking-serif:
+                "Playfair Display", serif;
+
+            --booking-display:
+                "Manrope", sans-serif;
+
+            --booking-body-font:
+                "DM Sans", sans-serif;
+
+        }
+
+
+
+        /* ======================================================
+           BASE
+           ====================================================== */
+
+        body {
+            background: var(--booking-cream);
+            color: var(--booking-ink);
+        }
+
+
+        .booking-page {
+            overflow-x: hidden;
+        }
+
+
+        .booking-container {
+            width: min(1420px, calc(100% - 64px));
+            margin: 0 auto;
+        }
+
+
+
+        /* ======================================================
+           HERO
+           ====================================================== */
+
+        .booking-hero {
+
+            position: relative;
+
+            width: calc(100% - 60px);
+            max-width: 1950px;
+
+            min-height: 560px;
+
+            margin: 0 auto;
+
+            overflow: hidden;
+
+            display: flex;
+            align-items: flex-end;
+
+            border-radius: 28px;
+
+            background:
+
+                radial-gradient(
+                    circle at 85% 25%,
+                    rgba(213, 167, 76, 0.17),
+                    transparent 30%
+                ),
+
+                linear-gradient(
+                    120deg,
+                    #031522,
+                    #082c47 62%,
+                    #14526f
+                );
+
+            color: white;
+        }
+
+
+        .booking-hero::after {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    rgba(3, 21, 34, 1) 0%,
+                    rgba(3, 21, 34, .96) 42%,
+                    rgba(3, 21, 34, .73) 67%,
+                    rgba(3, 21, 34, .15) 100%
+                );
+
+        }
+
+
+        .booking-hero-inner {
+
+            position: relative;
+
+            z-index: 2;
+
+            width: 100%;
+
+            padding:
+
+                100px
+                clamp(48px, 6vw, 110px)
+                70px;
+
+        }
+
+
+        .booking-hero-eyebrow {
+
+            margin: 0 0 20px;
+
+            color: var(--booking-gold-light);
+
+            font-family: var(--booking-display);
+
+            font-size: 12px;
+            font-weight: 800;
+
+            letter-spacing: .17em;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .booking-hero h1 {
+
+            max-width: 1080px;
+
+            margin: 0;
+
+            font-family: var(--booking-serif);
+
+            font-size: clamp(66px, 6.2vw, 108px);
+
+            line-height: .91;
+
+            letter-spacing: -.055em;
+
+        }
+
+
+        .booking-hero-copy {
+
+            max-width: 720px;
+
+            margin: 27px 0 0;
+
+            color: rgba(255,255,255,.72);
+
+            font-family: var(--booking-body-font);
+
+            font-size: 19px;
+
+            line-height: 1.7;
+
+        }
+
+
+
+        /* ======================================================
+           BOOKING INTRO
+           ====================================================== */
+
+        .booking-intro {
+
+            padding: 95px 0 75px;
+
+        }
+
+
+        .booking-intro-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(250px, .55fr)
+                minmax(0, 1.45fr);
+
+            gap: clamp(50px, 8vw, 130px);
+
+        }
+
+
+        .booking-intro-label {
+
+            color: #a5762f;
+
+            font-family: var(--booking-display);
+
+            font-size: 12px;
+            font-weight: 800;
+
+            letter-spacing: .15em;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .booking-intro-copy {
+
+            max-width: 850px;
+
+            margin: 0;
+
+            font-family: var(--booking-serif);
+
+            font-size: clamp(32px, 3vw, 50px);
+
+            line-height: 1.25;
+
+        }
+
+
+
+        /* ======================================================
+           FORM PANEL
+           ====================================================== */
+
+        .booking-section {
+
+            padding: 20px 0 140px;
+
+        }
+
+
+        .booking-layout {
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, 1fr)
+                320px;
+
+            gap: 45px;
+
+            align-items: start;
+
+        }
+
+
+        .booking-form-panel {
+
+            overflow: hidden;
+
+            border:
+                1px solid
+                var(--booking-line);
+
+            border-radius: 24px;
+
+            background: white;
+
+            box-shadow:
+                0 22px 60px
+                rgba(3, 25, 40, .07);
+
+        }
+
+
+
+        /* ======================================================
+           PROGRESS
+           ====================================================== */
+
+        .booking-progress {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            border-bottom:
+                1px solid
+                var(--booking-line);
+
+        }
+
+
+        .booking-progress-item {
+
+            position: relative;
+
+            min-height: 92px;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 13px;
+
+            padding: 20px 25px;
+
+            color: #8c9499;
+
+            font-family: var(--booking-display);
+
+            font-size: 11px;
+            font-weight: 800;
+
+            letter-spacing: .09em;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .booking-progress-item + .booking-progress-item {
+
+            border-left:
+                1px solid
+                var(--booking-line);
+
+        }
+
+
+        .booking-progress-number {
+
+            width: 34px;
+            height: 34px;
+
+            flex: 0 0 auto;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 50%;
+
+            background: #f0eee9;
+
+            color: #778088;
+
+        }
+
+
+        .booking-progress-item.active {
+
+            color: var(--booking-ink);
+
+        }
+
+
+        .booking-progress-item.active
+        .booking-progress-number {
+
+            background: var(--booking-gold);
+
+            color: var(--booking-navy);
+
+        }
+
+
+        .booking-progress-item.complete
+        .booking-progress-number {
+
+            background: var(--booking-navy);
+
+            color: white;
+
+        }
+
+
+
+        /* ======================================================
+           STEPS
+           ====================================================== */
+
+        .booking-step {
+
+            display: none;
+
+            padding:
+                58px
+                clamp(30px, 5vw, 70px)
+                65px;
+
+        }
+
+
+        .booking-step.active {
+            display: block;
+        }
+
+
+        .booking-step-label {
+
+            margin: 0 0 12px;
+
+            color: #a5762f;
+
+            font-family: var(--booking-display);
+
+            font-size: 11px;
+            font-weight: 800;
+
+            letter-spacing: .15em;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .booking-step h2 {
+
+            max-width: 850px;
+
+            margin: 0;
+
+            font-family: var(--booking-serif);
+
+            font-size: clamp(45px, 4vw, 67px);
+
+            line-height: .98;
+
+            letter-spacing: -.045em;
+
+        }
+
+
+        .booking-step-description {
+
+            max-width: 720px;
+
+            margin: 20px 0 0;
+
+            color: var(--booking-body);
+
+            font-size: 17px;
+
+            line-height: 1.7;
+
+        }
+
+
+
+        /* ======================================================
+           SERVICE OPTIONS
+           ====================================================== */
+
+        .booking-service-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap: 15px;
+
+            margin-top: 45px;
+
+        }
+
+
+        .booking-service-card {
+
+            position: relative;
+
+            min-height: 190px;
+
+            padding: 27px;
+
+            border:
+                1px solid
+                var(--booking-line);
+
+            border-radius: 16px;
+
+            background: #fff;
+
+            text-align: left;
+
+            cursor: pointer;
+
+            transition:
+                border .2s ease,
+                background .2s ease,
+                transform .2s ease;
+
+        }
+
+
+        .booking-service-card:hover {
+
+            transform: translateY(-2px);
+
+            border-color:
+                rgba(169, 120, 43, .5);
+
+        }
+
+
+        .booking-service-card.selected {
+
+            border-color: var(--booking-gold);
+
+            background:
+                rgba(213, 167, 76, .07);
+
+        }
+
+
+        .booking-service-card.selected::after {
+
+            content: "✓";
+
+            position: absolute;
+
+            right: 18px;
+            top: 18px;
+
+            width: 30px;
+            height: 30px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 50%;
+
+            background: var(--booking-gold);
+
+            color: var(--booking-navy);
+
+            font-weight: 900;
+
+        }
+
+
+        .booking-service-card small {
+
+            display: block;
+
+            margin-bottom: 15px;
+
+            color: #a5762f;
+
+            font-family: var(--booking-display);
+
+            font-size: 9px;
+            font-weight: 800;
+
+            letter-spacing: .13em;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .booking-service-card h3 {
+
+            margin: 0;
+
+            font-family: var(--booking-serif);
+
+            font-size: 29px;
+
+            line-height: 1.05;
+
+        }
+
+
+        .booking-service-card p {
+
+            margin: 13px 0 0;
+
+            color: var(--booking-body);
+
+            font-size: 14px;
+
+            line-height: 1.55;
+
+        }
+
+
+
+        /* ======================================================
+           FORM FIELDS
+           ====================================================== */
+
+        .booking-fields {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap: 24px 20px;
+
+            margin-top: 45px;
+
+        }
+
+
+        .booking-field {
+
+            min-width: 0;
+
+        }
+
+
+        .booking-field.full {
+
+            grid-column: 1 / -1;
+
+        }
+
+
+        .booking-field label {
+
+            display: block;
+
+            margin-bottom: 9px;
+
+            color: var(--booking-ink);
+
+            font-family: var(--booking-display);
+
+            font-size: 11px;
+            font-weight: 800;
+
+            letter-spacing: .06em;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .booking-field .optional {
+
+            color: #91989d;
+
+            font-weight: 600;
+
+            text-transform: none;
+
+        }
+
+
+        .booking-field input,
+        .booking-field select,
+        .booking-field textarea {
+
+            width: 100%;
+
+            border:
+                1px solid
+                rgba(8, 38, 61, .17);
+
+            border-radius: 10px;
+
+            outline: none;
+
+            background: #fff;
+
+            color: var(--booking-ink);
+
+            font-family: var(--booking-body-font);
+
+            font-size: 15px;
+
+            transition:
+                border .2s ease,
+                box-shadow .2s ease;
+
+        }
+
+
+        .booking-field input,
+        .booking-field select {
+
+            min-height: 54px;
+
+            padding: 0 16px;
+
+        }
+
+
+        .booking-field textarea {
+
+            min-height: 150px;
+
+            padding: 15px 16px;
+
+            resize: vertical;
+
+            line-height: 1.6;
+
+        }
+
+
+        .booking-field input:focus,
+        .booking-field select:focus,
+        .booking-field textarea:focus {
+
+            border-color: var(--booking-gold);
+
+            box-shadow:
+                0 0 0 3px
+                rgba(213, 167, 76, .10);
+
+        }
+
+
+        /* ======================================================
+           CONDITIONAL
+           ====================================================== */
+
+        .service-conditional {
+
+            display: none;
+
+            grid-column: 1 / -1;
+
+        }
+
+
+        .service-conditional.show {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap: 24px 20px;
+
+        }
+
+
+        .service-conditional
+        .booking-field.full {
+
+            grid-column: 1 / -1;
+
+        }
+
+
+
+        /* ======================================================
+           RADIO OPTIONS
+           ====================================================== */
+
+        .booking-radio-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 10px;
+
+        }
+
+
+        .booking-radio {
+
+            position: relative;
+
+        }
+
+
+        .booking-radio input {
+
+            position: absolute;
+
+            opacity: 0;
+
+            pointer-events: none;
+
+        }
+
+
+        .booking-radio label {
+
+            min-height: 55px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 12px;
+
+            margin: 0;
+
+            border:
+                1px solid
+                rgba(8, 38, 61, .16);
+
+            border-radius: 9px;
+
+            background: white;
+
+            color: var(--booking-body);
+
+            font-family: var(--booking-body-font);
+
+            font-size: 13px;
+            font-weight: 600;
+
+            letter-spacing: 0;
+
+            text-align: center;
+
+            text-transform: none;
+
+            cursor: pointer;
+
+        }
+
+
+        .booking-radio input:checked + label {
+
+            border-color: var(--booking-gold);
+
+            background:
+                rgba(213, 167, 76, .09);
+
+            color: var(--booking-ink);
+
+        }
+
+
+
+        /* ======================================================
+           NAV BUTTONS
+           ====================================================== */
+
+        .booking-step-actions {
+
+            display: flex;
+
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 15px;
+
+            margin-top: 42px;
+
+            padding-top: 28px;
+
+            border-top:
+                1px solid
+                var(--booking-line);
+
+        }
+
+
+        .booking-next,
+        .booking-submit {
+
+            min-height: 52px;
+
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 0 23px;
+
+            border: 0;
+
+            border-radius: 999px;
+
+            background: var(--booking-navy);
+
+            color: white;
+
+            font-family: var(--booking-display);
+
+            font-size: 12px;
+            font-weight: 900;
+
+            letter-spacing: .045em;
+
+            text-transform: uppercase;
+
+            cursor: pointer;
+
+        }
+
+
+        .booking-submit {
+
+            background: var(--booking-gold);
+
+            color: var(--booking-navy);
+
+        }
+
+
+        .booking-back {
+
+            min-height: 52px;
+
+            padding: 0 5px;
+
+            border: 0;
+
+            background: transparent;
+
+            color: var(--booking-body);
+
+            font-family: var(--booking-display);
+
+            font-size: 12px;
+            font-weight: 800;
+
+            text-transform: uppercase;
+
+            cursor: pointer;
+
+        }
+
+
+        .booking-next:disabled {
+
+            opacity: .35;
+
+            cursor: not-allowed;
+
+        }
+
+
+
+        /* ======================================================
+           SIDEBAR
+           ====================================================== */
+
+        .booking-sidebar {
+
+            position: sticky;
+
+            top: 150px;
+
+        }
+
+
+        .booking-summary {
+
+            padding: 30px;
+
+            border-radius: 19px;
+
+            background: var(--booking-navy);
+
+            color: white;
+
+        }
+
+
+        .booking-summary small {
+
+            display: block;
+
+            margin-bottom: 15px;
+
+            color: var(--booking-gold-light);
+
+            font-family: var(--booking-display);
+
+            font-size: 10px;
+            font-weight: 800;
+
+            letter-spacing: .15em;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .booking-summary h3 {
+
+            margin: 0;
+
+            font-family: var(--booking-serif);
+
+            font-size: 34px;
+
+            line-height: 1.06;
+
+        }
+
+
+        .booking-summary p {
+
+            margin: 17px 0 0;
+
+            color: rgba(255,255,255,.65);
+
+            font-size: 14px;
+
+            line-height: 1.65;
+
+        }
+
+
+        .booking-summary-service {
+
+            margin-top: 28px;
+
+            padding-top: 23px;
+
+            border-top:
+                1px solid
+                rgba(255,255,255,.12);
+
+        }
+
+
+        .booking-summary-service span {
+
+            display: block;
+
+            color: rgba(255,255,255,.48);
+
+            font-family: var(--booking-display);
+
+            font-size: 9px;
+            font-weight: 800;
+
+            letter-spacing: .11em;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .booking-summary-service strong {
+
+            display: block;
+
+            margin-top: 6px;
+
+            color: white;
+
+            font-family: var(--booking-serif);
+
+            font-size: 22px;
+
+        }
+
+
+        .booking-privacy {
+
+            margin-top: 18px;
+
+            padding: 23px 25px;
+
+            border:
+                1px solid
+                var(--booking-line);
+
+            border-radius: 16px;
+
+            background: rgba(255,255,255,.45);
+
+        }
+
+
+        .booking-privacy strong {
+
+            display: block;
+
+            font-family: var(--booking-display);
+
+            font-size: 11px;
+            font-weight: 900;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .booking-privacy p {
+
+            margin: 9px 0 0;
+
+            color: var(--booking-body);
+
+            font-size: 13px;
+
+            line-height: 1.55;
+
+        }
+
+
+
+        /* ======================================================
+           NOTICE
+           ====================================================== */
+
+        .booking-status {
+
+            display: none;
+
+            margin-top: 25px;
+
+            padding: 17px 19px;
+
+            border-radius: 10px;
+
+            background:
+                rgba(213, 167, 76, .12);
+
+            color: var(--booking-ink);
+
+            font-size: 14px;
+
+            line-height: 1.6;
+
+        }
+
+
+        .booking-status.show {
+
+            display: block;
+
+        }
+
+
+
+        /* ======================================================
+           RESPONSIVE
+           ====================================================== */
+
+        @media (max-width: 1050px) {
+
+            .booking-layout {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .booking-sidebar {
+
+                position: static;
+
+            }
+
+
+            .booking-service-grid {
+
+                grid-template-columns: 1fr 1fr;
+
+            }
+
+        }
+
+
+        @media (max-width: 720px) {
+
+            .booking-container {
+
+                width: calc(100% - 34px);
+
+            }
+
+
+            .booking-hero {
+
+                width: calc(100% - 10px);
+
+                min-height: 610px;
+
+                border-radius: 20px;
+
+            }
+
+
+            .booking-hero-inner {
+
+                padding:
+                    80px
+                    24px
+                    42px;
+
+            }
+
+
+            .booking-hero h1 {
+
+                font-size: 54px;
+
+            }
+
+
+            .booking-hero-copy {
+
+                font-size: 16px;
+
+            }
+
+
+            .booking-intro {
+
+                padding: 70px 0 55px;
+
+            }
+
+
+            .booking-intro-grid {
+
+                grid-template-columns: 1fr;
+
+                gap: 25px;
+
+            }
+
+
+            .booking-progress {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .booking-progress-item {
+
+                min-height: 65px;
+
+            }
+
+
+            .booking-progress-item +
+            .booking-progress-item {
+
+                border-left: 0;
+
+                border-top:
+                    1px solid
+                    var(--booking-line);
+
+            }
+
+
+            .booking-step {
+
+                padding:
+                    40px
+                    20px
+                    45px;
+
+            }
+
+
+            .booking-step h2 {
+
+                font-size: 45px;
+
+            }
+
+
+            .booking-service-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .booking-fields {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .booking-field.full {
+
+                grid-column: auto;
+
+            }
+
+
+            .service-conditional.show {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .service-conditional
+            .booking-field.full {
+
+                grid-column: auto;
+
+            }
+
+
+            .booking-radio-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .booking-step-actions {
+
+                align-items: stretch;
+
+            }
+
+
+            .booking-next,
+            .booking-submit {
+
+                flex: 1;
+
+            }
+
+        }
+
+    
+
+        /* ======================================================
+           FOOTER CONTACT + SOCIAL LINKS
+           ====================================================== */
+
+        .footer-contact {
+            min-width: 0;
+        }
+
+        .footer-contact h3 {
+            margin: 0 0 18px;
+            color: #ffffff;
+            font-family: "Manrope", sans-serif;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .footer-contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+        }
+
+        .footer-contact-links a {
+            width: fit-content;
+            color: rgba(255, 255, 255, 0.82);
+            font-family: "DM Sans", sans-serif;
+            font-size: 14px;
+            line-height: 1.45;
+            text-decoration: none;
+            transition: color 0.2s ease, transform 0.2s ease;
+        }
+
+        .footer-contact-links a:hover {
+            color: #ffffff;
+            transform: translateX(2px);
+        }
+
+        .footer-socials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 22px;
+        }
+
+        .footer-social-link {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 auto;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.04);
+            color: #ffffff;
+            text-decoration: none;
+            transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+        }
+
+        .footer-social-link:hover {
+            transform: translateY(-3px);
+            border-color: rgba(213, 167, 76, 0.8);
+            background: rgba(213, 167, 76, 0.12);
+        }
+
+        .footer-social-link svg {
+            width: 18px;
+            height: 18px;
+            display: block;
+            fill: currentColor;
+        }
+
+        .footer-social-link.amazon-music svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .footer-social-link span {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        @media (max-width: 720px) {
+            .footer-contact {
+                margin-top: 10px;
+            }
+
+            .footer-socials {
+                gap: 9px;
+            }
+
+            .footer-social-link {
+                width: 42px;
+                height: 42px;
+            }
+        }
+</style>
+<style id="services-dropdown-arrow-only-fix">
+/* =========================================================
+   ONLY ARROW ALLOWED ON THE WEBSITE:
+   SERVICES DROPDOWN CHEVRON
+   ========================================================= */
+
+.nav-dropdown-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 7px !important;
+}
+
+.services-dropdown-arrow {
+    display: inline-block !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    color: #e7b64f !important;
+
+    font-size: 11px !important;
+    font-weight: 800 !important;
+    line-height: 1 !important;
+
+    transform: translateY(-1px) !important;
+    transform-origin: center !important;
+
+    transition: transform 180ms ease !important;
+}
+
+.nav-dropdown-button[aria-expanded="true"] .services-dropdown-arrow {
+    transform:
+        translateY(-1px)
+        rotate(180deg) !important;
+}
+</style>
+
+
+<style id="booking-hero-true-slow-fade-final">
+
+/* =========================================================
+   BOOKING HERO — TRUE SLOW LEFT-EDGE IMAGE FADE
+   ========================================================= */
+
+.booking-hero {
+    position: relative !important;
+    isolation: isolate !important;
+    overflow: hidden !important;
+
+    background: #031522 !important;
+}
+
+.booking-hero::before {
+    content: "" !important;
+
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+
+    width: 74% !important;
+
+    z-index: 0 !important;
+    pointer-events: none !important;
+
+    background:
+        url("assets/images/booking/booking-hero.png?v=20260906-2010")
+        75% center / cover no-repeat !important;
+
+    
+    -webkit-mask-image:
+        linear-gradient(
+            90deg,
+            transparent 0%,
+            rgba(0,0,0,.04) 6%,
+            rgba(0,0,0,.12) 12%,
+            rgba(0,0,0,.24) 18%,
+            rgba(0,0,0,.40) 25%,
+            rgba(0,0,0,.58) 32%,
+            rgba(0,0,0,.74) 39%,
+            rgba(0,0,0,.87) 46%,
+            rgba(0,0,0,.95) 53%,
+            #000 61%,
+            #000 100%
+        ) !important;
+
+    mask-image:
+        linear-gradient(
+            90deg,
+            transparent 0%,
+            rgba(0,0,0,.04) 6%,
+            rgba(0,0,0,.12) 12%,
+            rgba(0,0,0,.24) 18%,
+            rgba(0,0,0,.40) 25%,
+            rgba(0,0,0,.58) 32%,
+            rgba(0,0,0,.74) 39%,
+            rgba(0,0,0,.87) 46%,
+            rgba(0,0,0,.95) 53%,
+            #000 61%,
+            #000 100%
+        ) !important;
+
+}
+
+.booking-hero::after {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 1 !important;
+    pointer-events: none !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3,21,34,.18) 0%,
+            rgba(3,21,34,.09) 43%,
+            rgba(3,21,34,.025) 70%,
+            rgba(3,21,34,0) 88%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(3,21,34,.01) 0%,
+            rgba(3,21,34,.03) 48%,
+            rgba(3,21,34,.21) 100%
+        ) !important;
+}
+
+.booking-hero-inner {
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+@media (max-width: 900px) {
+    .booking-hero::before {
+        width: 82% !important;
+        background-position: 72% center !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .booking-hero::before {
+        inset: 0 !important;
+        width: 100% !important;
+        background-position: 70% center !important;
+        
+    -webkit-mask-image:
+        linear-gradient(
+            0deg,
+            #000 0%,
+            #000 38%,
+            rgba(0,0,0,.94) 52%,
+            rgba(0,0,0,.78) 65%,
+            rgba(0,0,0,.55) 76%,
+            rgba(0,0,0,.30) 86%,
+            rgba(0,0,0,.12) 94%,
+            transparent 100%
+        ) !important;
+
+    mask-image:
+        linear-gradient(
+            0deg,
+            #000 0%,
+            #000 38%,
+            rgba(0,0,0,.94) 52%,
+            rgba(0,0,0,.78) 65%,
+            rgba(0,0,0,.55) 76%,
+            rgba(0,0,0,.30) 86%,
+            rgba(0,0,0,.12) 94%,
+            transparent 100%
+        ) !important;
+
+    }
+
+    .booking-hero::after {
+        background:
+            linear-gradient(
+                0deg,
+                rgba(3,21,34,.98) 0%,
+                rgba(3,21,34,.88) 48%,
+                rgba(3,21,34,.44) 75%,
+                rgba(3,21,34,.10) 100%
+            ) !important;
+    }
+}
+
+</style>
+
+<style id="booking-nav-perfect-center-fix">
+/* =========================================================
+   BOOKING PAGE — PERFECTLY CENTER DESKTOP NAVIGATION
+
+   Booking has no right-side header CTA, so the normal
+   2-column booking header makes the navigation appear
+   shifted to the right.
+
+   Keep the logo independently anchored on the left and
+   center the navigation against the FULL browser/header
+   width, not merely the space remaining after the logo.
+   ========================================================= */
+
+@media (min-width: 1181px) {
+
+    .booking-page .site-header .header-inner {
+        position: relative !important;
+
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+
+        align-items: center !important;
+
+        min-height: 76px !important;
+
+        padding-left: var(--page) !important;
+        padding-right: var(--page) !important;
+    }
+
+    .booking-page .site-header .brand {
+        position: absolute !important;
+
+        left: var(--page) !important;
+        top: 50% !important;
+
+        z-index: 2 !important;
+
+        transform: translateY(-50%) !important;
+
+        margin: 0 !important;
+    }
+
+    .booking-page .site-header .desktop-nav {
+        justify-self: center !important;
+
+        width: max-content !important;
+
+        margin: 0 auto !important;
+
+        transform: none !important;
+    }
+}
+</style>
+
+</head>
+<body class="booking-page">
+<!-- ======================================================
+         HEADER
+         ====================================================== -->
+<header class="site-header">
+<div class="header-inner">
+<a
+                href="index.html"
+                class="brand"
+                aria-label="Dr. Jack Dating home"
+            >
+<img
+                    src="assets/images/branding/dr-jack-logo.png"
+                    alt="Dr. Jack Dating"
+                    class="brand-logo"
+                >
+</a>
+<nav
+                class="desktop-nav"
+                aria-label="Main navigation"
+            >
+<a
+                    href="index.html"
+                    class="nav-link"
+                >
+                    Home</a>
+<a
+                    href="about.html"
+                    class="nav-link"
+                >
+                    Meet Dr. Jack</a>
+<div class="nav-dropdown">
+<button
+                        class="nav-dropdown-button"
+                        type="button"
+                    >
+Services
+<span class="services-dropdown-arrow" aria-hidden="true">▾</span>
+</button>
+<div class="nav-dropdown-menu">
+<a href="services/dating.html">
+<small>
+                                FOR SINGLES
+                            </small>
+<span>
+                                Dating Guidance
+                            </span>
+</a>
+<a href="services/matchmaking.html">
+<small>
+                                FOR A PERSONAL INTRODUCTION
+                            </small>
+<span>
+                                Matchmaking
+                            </span>
+</a>
+<a href="services/relationship-clarity.html">
+<small>
+                                FOR RELATIONSHIP DECISIONS
+                            </small>
+<span>
+                                Relationship Clarity
+                            </span>
+</a>
+<a href="services/marriage.html">
+<small>
+                                FOR COUPLES
+                            </small>
+<span>
+                                Marriage Guidance
+                            </span>
+</a>
+<a href="services/pre-marriage.html">
+<small>
+                                BEFORE MARRIAGE
+                            </small>
+<span>
+                                Pre-Marriage Guidance
+                            </span>
+</a>
+<a href="services/events-speaking.html">
+<small>
+                                LECTURES & EVENTS
+                            </small>
+<span>
+                                Events & Speaking
+                            </span>
+</a>
+</div>
+</div>
+<a
+                    href="success-stories.html"
+                    class="nav-link"
+                >
+                    Success Stories</a>
+<a
+                    href="insights.html"
+                    class="nav-link"
+                >
+                    Insights</a>
+<a
+                    href="lectures.html"
+                    class="nav-link"
+                >
+                    Lectures</a>
+</nav>
+</div>
+</header>
+<main>
+<!-- ==================================================
+             HERO
+             ================================================== -->
+<section class="booking-hero">
+<div class="booking-hero-inner">
+<p class="booking-hero-eyebrow">
+                    PRIVATE · CONFIDENTIAL · PERSONAL
+                </p>
+<h1>
+                    Tell us what you need help with.
+                </h1>
+<p class="booking-hero-copy">
+                    Every situation is different. Start by choosing
+                    the kind of guidance you are looking for, then
+                    share enough information for Dr. Jack to
+                    understand why you are reaching out.
+                </p>
+</div>
+</section>
+<!-- ==================================================
+             INTRO
+             ================================================== -->
+<section class="booking-intro">
+<div class="booking-container booking-intro-grid">
+<div class="booking-intro-label">
+                    BEFORE YOU BOOK
+                </div>
+<p class="booking-intro-copy">
+                    You do not need to know exactly what the answer is.
+                    You only need to know what you want help understanding.
+                </p>
+</div>
+</section>
+<!-- ==================================================
+             BOOKING
+             ================================================== -->
+<section class="booking-section">
+<div class="booking-container booking-layout">
+<form
+                    class="booking-form-panel"
+                    id="bookingForm"
+                >
+<input
+                        type="hidden"
+                        name="service"
+                        id="selectedServiceInput"
+                    >
+<!-- ======================================
+                         PROGRESS
+                         ====================================== -->
+<div class="booking-progress">
+<div
+                            class="booking-progress-item active"
+                            data-progress="1"
+                        >
+<span class="booking-progress-number">
+                                1
+                            </span>
+
+                            Choose Service
+
+                        </div>
+<div
+                            class="booking-progress-item"
+                            data-progress="2"
+                        >
+<span class="booking-progress-number">
+                                2
+                            </span>
+
+                            Your Situation
+
+                        </div>
+<div
+                            class="booking-progress-item"
+                            data-progress="3"
+                        >
+<span class="booking-progress-number">
+                                3
+                            </span>
+
+                            Contact & Schedule
+
+                        </div>
+</div>
+<!-- ======================================
+                         STEP 1
+                         ====================================== -->
+<section
+                        class="booking-step active"
+                        data-step="1"
+                    >
+<p class="booking-step-label">
+                            STEP 1 OF 3
+                        </p>
+<h2>
+                            What would you like help with?
+                        </h2>
+<p class="booking-step-description">
+                            Select the service that most closely matches
+                            what is happening right now. You can explain
+                            the details on the next screen.
+                        </p>
+<div class="booking-service-grid">
+<button
+                                type="button"
+                                class="booking-service-card"
+                                data-service="Dating Guidance"
+                                data-service-key="dating"
+                            >
+<small>
+                                    FOR JEWISH SINGLES
+                                </small>
+<h3>
+                                    Dating Guidance
+                                </h3>
+<p>
+                                    Understand recurring patterns,
+                                    evaluate dates more wisely,
+                                    and move toward marriage with clarity.
+                                </p>
+</button>
+<button
+                                type="button"
+                                class="booking-service-card"
+                                data-service="Matchmaking"
+                                data-service-key="matchmaking"
+                            >
+<small>
+                                    FOR A PERSONAL INTRODUCTION
+                                </small>
+<h3>
+                                    Matchmaking
+                                </h3>
+<p>
+                                    Be understood beyond the profile
+                                    and explore thoughtful introductions.
+                                </p>
+</button>
+<button
+                                type="button"
+                                class="booking-service-card"
+                                data-service="Relationship Clarity"
+                                data-service-key="clarity"
+                            >
+<small>
+                                    FOR RELATIONSHIP DECISIONS
+                                </small>
+<h3>
+                                    Relationship Clarity
+                                </h3>
+<p>
+                                    Understand uncertainty, evaluate concerns,
+                                    and decide whether the relationship
+                                    should move forward.
+                                </p>
+</button>
+<button
+                                type="button"
+                                class="booking-service-card"
+                                data-service="Marriage Guidance"
+                                data-service-key="marriage"
+                            >
+<small>
+                                    FOR COUPLES
+                                </small>
+<h3>
+                                    Marriage Guidance
+                                </h3>
+<p>
+                                    Understand recurring conflict,
+                                    improve communication,
+                                    and rebuild connection.
+                                </p>
+</button>
+<button
+                                type="button"
+                                class="booking-service-card"
+                                data-service="Pre-Marriage Guidance"
+                                data-service-key="premarriage"
+                            >
+<small>
+                                    BEFORE MARRIAGE
+                                </small>
+<h3>
+                                    Pre-Marriage Guidance
+                                </h3>
+<p>
+                                    Prepare for marriage with clearer
+                                    expectations and more meaningful
+                                    conversations before the wedding.
+                                </p>
+</button>
+<button
+                                type="button"
+                                class="booking-service-card"
+                                data-service="Events & Speaking"
+                                data-service-key="events"
+                            >
+<small>
+                                    LECTURES · EVENTS · COMMUNITY
+                                </small>
+<h3>
+                                    Events & Speaking
+                                </h3>
+<p>
+                                    Invite Dr. Jack to speak for your
+                                    organization, community,
+                                    school, event, or audience.
+                                </p>
+</button>
+</div>
+<div class="booking-step-actions">
+<span></span>
+<button
+                                type="button"
+                                class="booking-next"
+                                id="step1Next"
+                                disabled
+                            >
+                                Continue</button>
+</div>
+</section>
+<!-- ======================================
+                         STEP 2
+                         ====================================== -->
+<section
+                        class="booking-step"
+                        data-step="2"
+                    >
+<p class="booking-step-label">
+                            STEP 2 OF 3
+                        </p>
+<h2 id="situationHeading">
+                            Tell us what is happening.
+                        </h2>
+<p class="booking-step-description">
+                            A short explanation is enough.
+                            You do not need to tell your entire story
+                            before the conversation begins.
+                        </p>
+<div class="booking-fields">
+<div class="booking-field full">
+<label for="situation">
+                                    What would you like help understanding?
+                                </label>
+<textarea
+                                    id="situation"
+                                    name="situation"
+                                    required
+                                    placeholder="Briefly describe what is happening and what you are hoping to understand..."
+                                ></textarea>
+</div>
+<!-- DATING -->
+<div
+                                class="service-conditional"
+                                data-conditional="dating"
+                            >
+<div class="booking-field">
+<label for="datingStatus">
+                                        Current dating situation
+                                    </label>
+<select
+                                        id="datingStatus"
+                                        name="dating_status"
+                                    >
+<option value="">
+                                            Select
+                                        </option>
+<option>
+                                            Currently dating someone
+                                        </option>
+<option>
+                                            Dating but not seeing anyone seriously
+                                        </option>
+<option>
+                                            Not currently dating
+                                        </option>
+<option>
+                                            Recently ended a relationship
+                                        </option>
+</select>
+</div>
+<div class="booking-field">
+<label for="datingConcern">
+                                        Main concern
+                                    </label>
+<select
+                                        id="datingConcern"
+                                        name="dating_concern"
+                                    >
+<option value="">
+                                            Select
+                                        </option>
+<option>
+                                            Repeated dating patterns
+                                        </option>
+<option>
+                                            Attraction or chemistry
+                                        </option>
+<option>
+                                            Finding compatible people
+                                        </option>
+<option>
+                                            Commitment concerns
+                                        </option>
+<option>
+                                            Family pressure
+                                        </option>
+<option>
+                                            Other
+                                        </option>
+</select>
+</div>
+</div>
+<!-- MATCHMAKING -->
+<div
+                                class="service-conditional"
+                                data-conditional="matchmaking"
+                            >
+<div class="booking-field">
+<label for="matchmakingStatus">
+                                        Are you currently dating someone?
+                                    </label>
+<select
+                                        id="matchmakingStatus"
+                                        name="matchmaking_status"
+                                    >
+<option value="">
+                                            Select
+                                        </option>
+<option>
+                                            No
+                                        </option>
+<option>
+                                            Casually
+                                        </option>
+<option>
+                                            Yes, seriously
+                                        </option>
+</select>
+</div>
+<div class="booking-field">
+<label for="matchmakingExperience">
+                                        Matchmaking experience
+                                    </label>
+<select
+                                        id="matchmakingExperience"
+                                        name="matchmaking_experience"
+                                    >
+<option value="">
+                                            Select
+                                        </option>
+<option>
+                                            New to matchmaking
+                                        </option>
+<option>
+                                            Some previous introductions
+                                        </option>
+<option>
+                                            Extensive shidduch experience
+                                        </option>
+</select>
+</div>
+</div>
+<!-- RELATIONSHIP CLARITY -->
+<div
+                                class="service-conditional"
+                                data-conditional="clarity"
+                            >
+<div class="booking-field">
+<label for="relationshipLength">
+                                        How long have you been dating?
+                                    </label>
+<input
+                                        id="relationshipLength"
+                                        name="relationship_length"
+                                        type="text"
+                                        placeholder="Example: 6 months"
+                                    >
+</div>
+<div class="booking-field">
+<label for="clarityQuestion">
+                                        Main decision
+                                    </label>
+<select
+                                        id="clarityQuestion"
+                                        name="clarity_question"
+                                    >
+<option value="">
+                                            Select
+                                        </option>
+<option>
+                                            Whether to continue dating
+                                        </option>
+<option>
+                                            Whether to become engaged
+                                        </option>
+<option>
+                                            Attraction concerns
+                                        </option>
+<option>
+                                            Compatibility concerns
+                                        </option>
+<option>
+                                            Family concerns
+                                        </option>
+<option>
+                                            Red flags or recurring conflict
+                                        </option>
+<option>
+                                            Other
+                                        </option>
+</select>
+</div>
+</div>
+<!-- MARRIAGE -->
+<div
+                                class="service-conditional"
+                                data-conditional="marriage"
+                            >
+<div class="booking-field">
+<label for="marriageLength">
+                                        How long have you been married?
+                                    </label>
+<input
+                                        id="marriageLength"
+                                        name="marriage_length"
+                                        type="text"
+                                        placeholder="Example: 8 years"
+                                    >
+</div>
+<div class="booking-field">
+<label for="spouseParticipation">
+                                        Will your spouse participate?
+                                    </label>
+<select
+                                        id="spouseParticipation"
+                                        name="spouse_participation"
+                                    >
+<option value="">
+                                            Select
+                                        </option>
+<option>
+                                            Yes
+                                        </option>
+<option>
+                                            No
+                                        </option>
+<option>
+                                            Not sure yet
+                                        </option>
+</select>
+</div>
+</div>
+<!-- PRE-MARRIAGE -->
+<div
+                                class="service-conditional"
+                                data-conditional="premarriage"
+                            >
+<div class="booking-field">
+<label for="relationshipStage">
+                                        Relationship stage
+                                    </label>
+<select
+                                        id="relationshipStage"
+                                        name="relationship_stage"
+                                    >
+<option value="">
+                                            Select
+                                        </option>
+<option>
+                                            Serious dating
+                                        </option>
+<option>
+                                            Considering engagement
+                                        </option>
+<option>
+                                            Engaged
+                                        </option>
+<option>
+                                            Wedding scheduled
+                                        </option>
+</select>
+</div>
+<div class="booking-field">
+<label for="weddingDate">
+                                        Wedding date
+                                        <span class="optional">
+                                            (if applicable)
+                                        </span>
+</label>
+<input
+                                        id="weddingDate"
+                                        name="wedding_date"
+                                        type="date"
+                                    >
+</div>
+</div>
+<!-- EVENTS -->
+<div
+                                class="service-conditional"
+                                data-conditional="events"
+                            >
+<div class="booking-field">
+<label for="organization">
+                                        Organization
+                                    </label>
+<input
+                                        id="organization"
+                                        name="organization"
+                                        type="text"
+                                        placeholder="Organization or community name"
+                                    >
+</div>
+<div class="booking-field">
+<label for="eventType">
+                                        Event type
+                                    </label>
+<select
+                                        id="eventType"
+                                        name="event_type"
+                                    >
+<option value="">
+                                            Select
+                                        </option>
+<option>
+                                            Lecture
+                                        </option>
+<option>
+                                            Singles event
+                                        </option>
+<option>
+                                            Workshop
+                                        </option>
+<option>
+                                            Community program
+                                        </option>
+<option>
+                                            Conference
+                                        </option>
+<option>
+                                            Podcast / Interview
+                                        </option>
+<option>
+                                            Other
+                                        </option>
+</select>
+</div>
+<div class="booking-field">
+<label for="eventDate">
+                                        Proposed date
+                                        <span class="optional">
+                                            (if known)
+                                        </span>
+</label>
+<input
+                                        id="eventDate"
+                                        name="event_date"
+                                        type="date"
+                                    >
+</div>
+<div class="booking-field">
+<label for="audienceSize">
+                                        Estimated audience size
+                                    </label>
+<input
+                                        id="audienceSize"
+                                        name="audience_size"
+                                        type="number"
+                                        min="1"
+                                        placeholder="Example: 150"
+                                    >
+</div>
+<div class="booking-field full">
+<label for="eventLocation">
+                                        Event location
+                                    </label>
+<input
+                                        id="eventLocation"
+                                        name="event_location"
+                                        type="text"
+                                        placeholder="City, venue, or online"
+                                    >
+</div>
+</div>
+</div>
+<div class="booking-step-actions">
+<button
+                                type="button"
+                                class="booking-back"
+                                data-back="1"
+                            >
+                                 Back</button>
+<button
+                                type="button"
+                                class="booking-next"
+                                id="step2Next"
+                            >
+                                Continue</button>
+</div>
+</section>
+<!-- ======================================
+                         STEP 3
+                         ====================================== -->
+<section
+                        class="booking-step"
+                        data-step="3"
+                    >
+<p class="booking-step-label">
+                            STEP 3 OF 3
+                        </p>
+<h2>
+                            How should Dr. Jack reach you?
+                        </h2>
+<p class="booking-step-description">
+                            Provide the best contact information
+                            and your general scheduling preferences.
+                        </p>
+<div class="booking-fields">
+<div class="booking-field">
+<label for="firstName">
+                                    First name
+                                </label>
+<input
+                                    id="firstName"
+                                    name="first_name"
+                                    type="text"
+                                    autocomplete="given-name"
+                                    required
+                                >
+</div>
+<div class="booking-field">
+<label for="lastName">
+                                    Last name
+                                </label>
+<input
+                                    id="lastName"
+                                    name="last_name"
+                                    type="text"
+                                    autocomplete="family-name"
+                                    required
+                                >
+</div>
+<div class="booking-field">
+<label for="email">
+                                    Email
+                                </label>
+<input
+                                    id="email"
+                                    name="email"
+                                    type="email"
+                                    autocomplete="email"
+                                    required
+                                >
+</div>
+<div class="booking-field">
+<label for="phone">
+                                    Phone / WhatsApp
+                                </label>
+<input
+                                    id="phone"
+                                    name="phone"
+                                    type="tel"
+                                    autocomplete="tel"
+                                    required
+                                >
+</div>
+<div class="booking-field">
+<label for="location">
+                                    Location
+                                </label>
+<input
+                                    id="location"
+                                    name="location"
+                                    type="text"
+                                    placeholder="City / Country"
+                                >
+</div>
+<div class="booking-field">
+<label for="timezone">
+                                    Time zone
+                                </label>
+<input
+                                    id="timezone"
+                                    name="timezone"
+                                    type="text"
+                                    placeholder="Example: EST"
+                                >
+</div>
+<div class="booking-field">
+<label for="preferredDay">
+                                    Preferred day
+                                    <span class="optional">
+                                        (optional)
+                                    </span>
+</label>
+<select
+                                    id="preferredDay"
+                                    name="preferred_day"
+                                >
+<option value="">
+                                        No preference
+                                    </option>
+<option>
+                                        Sunday
+                                    </option>
+<option>
+                                        Monday
+                                    </option>
+<option>
+                                        Tuesday
+                                    </option>
+<option>
+                                        Wednesday
+                                    </option>
+<option>
+                                        Thursday
+                                    </option>
+<option>
+                                        Friday
+                                    </option>
+</select>
+</div>
+<div class="booking-field">
+<label for="preferredTime">
+                                    Preferred time
+                                    <span class="optional">
+                                        (optional)
+                                    </span>
+</label>
+<select
+                                    id="preferredTime"
+                                    name="preferred_time"
+                                >
+<option value="">
+                                        No preference
+                                    </option>
+<option>
+                                        Morning
+                                    </option>
+<option>
+                                        Afternoon
+                                    </option>
+<option>
+                                        Evening
+                                    </option>
+</select>
+</div>
+<div class="booking-field full">
+<label>
+                                    Preferred contact method
+                                </label>
+<div class="booking-radio-grid">
+<div class="booking-radio">
+<input
+                                            type="radio"
+                                            name="contact_method"
+                                            id="contactEmail"
+                                            value="Email"
+                                            checked
+                                        >
+<label for="contactEmail">
+                                            Email
+                                        </label>
+</div>
+<div class="booking-radio">
+<input
+                                            type="radio"
+                                            name="contact_method"
+                                            id="contactPhone"
+                                            value="Phone"
+                                        >
+<label for="contactPhone">
+                                            Phone
+                                        </label>
+</div>
+<div class="booking-radio">
+<input
+                                            type="radio"
+                                            name="contact_method"
+                                            id="contactWhatsapp"
+                                            value="WhatsApp"
+                                        >
+<label for="contactWhatsapp">
+                                            WhatsApp
+                                        </label>
+</div>
+</div>
+</div>
+<div class="booking-field full">
+<label for="additionalNotes">
+                                    Anything else Dr. Jack should know?
+                                    <span class="optional">
+                                        (optional)
+                                    </span>
+</label>
+<textarea
+                                    id="additionalNotes"
+                                    name="additional_notes"
+                                    placeholder="Add any additional context here..."
+                                ></textarea>
+</div>
+</div>
+<div
+                            class="booking-status"
+                            id="bookingStatus"
+                        >
+                            Your request has not been connected to the
+                            backend yet. The CRM, email automation,
+                            and calendar workflow will be connected here.
+                        </div>
+<div class="booking-step-actions">
+<button
+                                type="button"
+                                class="booking-back"
+                                data-back="2"
+                            >
+                                 Back</button>
+<button
+                                type="submit"
+                                class="booking-submit"
+                            >
+                                Request Private Consultation</button>
+</div>
+</section>
+</form>
+<!-- ==========================================
+                     SIDEBAR
+                     ========================================== -->
+<aside class="booking-sidebar">
+<div class="booking-summary">
+<small>
+                            YOUR REQUEST
+                        </small>
+<h3>
+                            A private conversation built around your situation.
+                        </h3>
+<p>
+                            Your answers help Dr. Jack understand
+                            why you are reaching out before the
+                            conversation begins.
+                        </p>
+<div class="booking-summary-service">
+<span>
+                                SELECTED SERVICE
+                            </span>
+<strong id="summaryService">
+                                Not selected yet
+                            </strong>
+</div>
+</div>
+<div class="booking-privacy">
+<strong>
+                            Private & confidential
+                        </strong>
+<p>
+                            Share only what you are comfortable
+                            sharing here. More sensitive details
+                            can be discussed privately.
+                        </p>
+</div>
+</aside>
+</div>
+</section>
+</main>
+<!-- ======================================================
+         FOOTER
+         ====================================================== -->
+<footer class="site-footer">
+<div class="footer-main">
+<div class="footer-brand">
+<img
+                    src="assets/images/branding/dr-jack-logo.png"
+                    alt="Dr. Jack Dating"
+                    class="footer-logo"
+                >
+<p>
+                    DATE WITH CLARITY.<br>
+                    MARRY WITH CONFIDENCE.
+                </p>
+</div>
+<div class="footer-column">
+<h3>
+                    EXPLORE
+                </h3>
+<a href="about.html">
+                    Meet Dr. Jack</a>
+<a href="success-stories.html">
+                    Success Stories</a>
+<a href="insights.html">
+                    Insights</a>
+<a href="lectures.html">
+                    Lectures</a>
+</div>
+<div class="footer-column">
+<h3>
+                    SERVICES
+                </h3>
+<a href="services/dating.html">
+                    Dating Guidance</a>
+<a href="services/matchmaking.html">
+                    Matchmaking</a>
+<a href="services/relationship-clarity.html">
+                    Relationship Clarity</a>
+<a href="services/marriage.html">
+                    Marriage Guidance</a>
+<a href="services/pre-marriage.html">
+                    Pre-Marriage Guidance</a>
+<a href="services/events-speaking.html">
+                    Events & Speaking</a>
+</div>
+<div class="footer-contact">
+<h3>
+                    CONTACT DR. JACK
+                </h3>
+<div class="footer-contact-links">
+<a href="tel:+13052061916">
+                        305-206-1916</a>
+<a href="mailto:jcohen.dating@gmail.com">
+                        jcohen.dating@gmail.com</a>
+</div>
+<div
+                    class="footer-socials"
+                    aria-label="Dr. Jack social media"
+                >
+<!-- FACEBOOK -->
+<a
+                        href="https://www.facebook.com/jack.cohen.581"
+                        class="footer-social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook"
+                    >
+<svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+<path d="M13.5 22v-9h3l.45-3.5H13.5V7.25c0-1.01.28-1.7 1.75-1.7H17V2.42c-.3-.04-1.34-.13-2.55-.13-2.52 0-4.25 1.54-4.25 4.37V9.5H7.35V13h2.85v9h3.3z"/>
+</svg>
+<span>
+                            Facebook
+                        </span>
+</a>
+<!-- INSTAGRAM -->
+<a
+                        href="https://www.instagram.com/rabbidr.jackcohen"
+                        class="footer-social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram"
+                    >
+<svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+<path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm11.5 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
+</svg>
+<span>
+                            Instagram
+                        </span>
+</a>
+<!-- TIKTOK -->
+<a
+                        href="https://www.tiktok.com/@jack.cohendating"
+                        class="footer-social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="TikTok"
+                    >
+<svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+<path d="M15.7 3c.2 1.7 1.2 3 2.8 3.8A6.7 6.7 0 0 0 21 7.4v3.1a9.7 9.7 0 0 1-5.2-1.6v7.5A5.6 5.6 0 1 1 11 10.9v3.2a2.6 2.6 0 1 0 1.7 2.4V3h3z"/>
+</svg>
+<span>
+                            TikTok
+                        </span>
+</a>
+<!-- SPOTIFY -->
+<a
+                        href="https://open.spotify.com/show/1MfsFgFGgZW7IoQM9G9pkc?si=fbf35315e7fb4515"
+                        class="footer-social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Spotify"
+                    >
+<svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+<path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm4.58 14.47a.75.75 0 0 1-1.03.25c-2.82-1.72-6.37-2.11-10.55-1.16a.75.75 0 1 1-.33-1.46c4.57-1.04 8.5-.59 11.66 1.34.35.21.46.67.25 1.03zm1.47-3.28a.94.94 0 0 1-1.29.31c-3.23-1.98-8.15-2.55-11.97-1.39a.94.94 0 1 1-.55-1.8c4.37-1.32 9.79-.68 13.5 1.59.44.27.58.85.31 1.29zm.13-3.42C14.3 7.47 7.9 7.25 4.2 8.37a1.13 1.13 0 1 1-.65-2.16c4.25-1.28 11.33-1.02 15.78 1.62a1.13 1.13 0 1 1-1.15 1.94z"/>
+</svg>
+<span>
+                            Spotify
+                        </span>
+</a>
+<!-- YOUTUBE -->
+<a
+                        href="https://www.youtube.com/@DrJackCohen"
+                        class="footer-social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="YouTube"
+                    >
+<svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+<path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.5-5.8zM9.6 15.7V8.3L16 12l-6.4 3.7z"/>
+</svg>
+<span>
+                            YouTube
+                        </span>
+</a>
+<!-- AMAZON MUSIC -->
+<a
+                        href="https://music.amazon.com/podcasts/f4aac898-4a0e-401d-88ca-be237606399c/dr-jack-cohen's-dating-and-relationships-podcast"
+                        class="footer-social-link amazon-music"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Amazon Music"
+                    >
+<svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+<path d="M4.1 16.7c2.2 1.6 5 2.4 7.8 2.4 2.5 0 5.3-.6 7.7-2 .4-.2.7.3.3.6-2.2 1.7-5.2 2.7-8.1 2.7-3.3 0-6.4-1.1-8.8-3-.4-.3.1-.9.5-.7h.6zm16.3-.2c-.5-.6-3.1-.3-4.3-.1-.4.1-.5-.3-.1-.6 2.3-1.6 6.1-1.1 6.5-.6.5.6-.1 4.4-2.3 6.2-.3.3-.7.1-.5-.3.5-1.1 1.3-3.9.7-4.6zM15.1 14.1c-.8.6-2 1-3 1-1.7 0-3.2-.9-3.2-2.7 0-1.4.8-2.4 2-2.9.9-.4 2.2-.5 3.2-.6V8.5c0-.7.1-1.6-.4-2.1-.4-.4-1-.6-1.6-.6-1.1 0-2 .6-2.3 1.7-.1.2-.2.4-.4.4l-2.1-.2c-.2 0-.4-.2-.3-.5.5-2.7 2.9-3.5 5.1-3.5 1.2 0 2.7.3 3.6 1.2 1.1 1 1 2.4 1 3.9v3.5c0 1.1.4 1.5.9 2.1.2.2.2.5 0 .7-.5.4-1.3 1.1-1.8 1.5-.2.2-.5.2-.7 0-.6-.7-.8-1-1.1-1.6l.1-.9zm-1-3.3c-1.6 0-3.3.3-3.3 1.8 0 .8.4 1.3 1.2 1.3.6 0 1.2-.4 1.6-1 .5-.8.5-1.5.5-2.1z"/>
+</svg>
+<span>
+                            Amazon Music
+                        </span>
+</a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p>
+                © 2026 Dr. Jack Dating. All rights reserved.
+            </p>
+<p>
+                Private · Personal · Torah-rooted
+            </p>
+</div>
+</footer>
+<!-- ======================================================
+         JAVASCRIPT
+         ====================================================== -->
+<script src="assets/js/main.js"></script>
+<script>
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
+
+
+                /* ==================================================
+                   ELEMENTS
+                   ================================================== */
+
+                const form =
+                    document.getElementById("bookingForm");
+
+                const steps =
+                    Array.from(
+                        document.querySelectorAll(
+                            ".booking-step"
+                        )
+                    );
+
+                const progressItems =
+                    Array.from(
+                        document.querySelectorAll(
+                            ".booking-progress-item"
+                        )
+                    );
+
+                const serviceCards =
+                    Array.from(
+                        document.querySelectorAll(
+                            ".booking-service-card"
+                        )
+                    );
+
+                const conditionalSections =
+                    Array.from(
+                        document.querySelectorAll(
+                            ".service-conditional"
+                        )
+                    );
+
+                const selectedServiceInput =
+                    document.getElementById(
+                        "selectedServiceInput"
+                    );
+
+                const summaryService =
+                    document.getElementById(
+                        "summaryService"
+                    );
+
+                const situationHeading =
+                    document.getElementById(
+                        "situationHeading"
+                    );
+
+                const step1Next =
+                    document.getElementById(
+                        "step1Next"
+                    );
+
+                const step2Next =
+                    document.getElementById(
+                        "step2Next"
+                    );
+
+                const bookingStatus =
+                    document.getElementById(
+                        "bookingStatus"
+                    );
+
+
+                let currentStep = 1;
+
+                let selectedService = "";
+
+                let selectedServiceKey = "";
+
+
+
+                /* ==================================================
+                   SERVICE HEADINGS
+                   ================================================== */
+
+                const situationHeadings = {
+
+                    dating:
+                        "Tell us what is happening in your dating life.",
+
+                    matchmaking:
+                        "Tell us what you are looking for.",
+
+                    clarity:
+                        "Tell us what feels unclear.",
+
+                    marriage:
+                        "Tell us what is happening in your marriage.",
+
+                    premarriage:
+                        "Tell us what you want to prepare for.",
+
+                    events:
+                        "Tell us about your event."
+
+                };
+
+
+
+                /* ==================================================
+                   SHOW STEP
+                   ================================================== */
+
+                function showStep(stepNumber) {
+
+                    currentStep = stepNumber;
+
+
+                    steps.forEach(
+                        function (step) {
+
+                            const number =
+                                Number(
+                                    step.dataset.step
+                                );
+
+                            step.classList.toggle(
+                                "active",
+                                number === stepNumber
+                            );
+
+                        }
+                    );
+
+
+                    progressItems.forEach(
+                        function (item) {
+
+                            const number =
+                                Number(
+                                    item.dataset.progress
+                                );
+
+
+                            item.classList.toggle(
+                                "active",
+                                number === stepNumber
+                            );
+
+
+                            item.classList.toggle(
+                                "complete",
+                                number < stepNumber
+                            );
+
+                        }
+                    );
+
+
+                    const panel =
+                        document.querySelector(
+                            ".booking-form-panel"
+                        );
+
+
+                    if (panel) {
+
+                        const top =
+                            panel.getBoundingClientRect().top +
+                            window.pageYOffset -
+                            125;
+
+
+                        window.scrollTo({
+
+                            top: top,
+
+                            behavior: "smooth"
+
+                        });
+
+                    }
+
+                }
+
+
+
+                /* ==================================================
+                   CONDITIONAL FIELDS
+                   ================================================== */
+
+                function showConditionalFields(
+                    serviceKey
+                ) {
+
+                    conditionalSections.forEach(
+                        function (section) {
+
+                            section.classList.toggle(
+                                "show",
+                                section.dataset.conditional ===
+                                    serviceKey
+                            );
+
+                        }
+                    );
+
+                }
+
+
+
+                /* ==================================================
+                   SELECT SERVICE
+                   ================================================== */
+
+                serviceCards.forEach(
+                    function (card) {
+
+                        card.addEventListener(
+                            "click",
+                            function () {
+
+
+                                serviceCards.forEach(
+                                    function (item) {
+
+                                        item.classList.remove(
+                                            "selected"
+                                        );
+
+                                    }
+                                );
+
+
+                                card.classList.add(
+                                    "selected"
+                                );
+
+
+                                selectedService =
+                                    card.dataset.service || "";
+
+
+                                selectedServiceKey =
+                                    card.dataset.serviceKey || "";
+
+
+                                selectedServiceInput.value =
+                                    selectedService;
+
+
+                                summaryService.textContent =
+                                    selectedService;
+
+
+                                step1Next.disabled = false;
+
+
+                                if (
+                                    situationHeadings[
+                                        selectedServiceKey
+                                    ]
+                                ) {
+
+                                    situationHeading.textContent =
+                                        situationHeadings[
+                                            selectedServiceKey
+                                        ];
+
+                                }
+
+
+                                showConditionalFields(
+                                    selectedServiceKey
+                                );
+
+                            }
+                        );
+
+                    }
+                );
+
+
+
+                /* ==================================================
+                   STEP 1  STEP 2
+                   ================================================== */
+
+                step1Next.addEventListener(
+                    "click",
+                    function () {
+
+                        if (!selectedService) {
+                            return;
+                        }
+
+
+                        showStep(2);
+
+                    }
+                );
+
+
+
+                /* ==================================================
+                   STEP 2  STEP 3
+                   ================================================== */
+
+                step2Next.addEventListener(
+                    "click",
+                    function () {
+
+
+                        const situation =
+                            document.getElementById(
+                                "situation"
+                            );
+
+
+                        if (
+                            !situation.value.trim()
+                        ) {
+
+                            situation.focus();
+
+                            situation.reportValidity();
+
+                            return;
+
+                        }
+
+
+                        showStep(3);
+
+                    }
+                );
+
+
+
+                /* ==================================================
+                   BACK BUTTONS
+                   ================================================== */
+
+                document.querySelectorAll(
+                    ".booking-back"
+                ).forEach(
+                    function (button) {
+
+                        button.addEventListener(
+                            "click",
+                            function () {
+
+                                const destination =
+                                    Number(
+                                        button.dataset.back
+                                    );
+
+
+                                if (destination) {
+
+                                    showStep(
+                                        destination
+                                    );
+
+                                }
+
+                            }
+                        );
+
+                    }
+                );
+
+
+
+                /* ==================================================
+                   FORM SUBMIT  THANK YOU PAGE
+                   ================================================== */
+
+                form.addEventListener(
+                    "submit",
+                    function (event) {
+
+                        event.preventDefault();
+
+                        if (!form.checkValidity()) {
+                            form.reportValidity();
+                            return;
+                        }
+
+                        /*
+                         * The front-end form is not connected to the CRM/backend yet.
+                         * When the backend is connected, keep the redirect below
+                         * INSIDE the successful submission response.
+                         */
+
+                        const formData =
+                            new FormData(form);
+
+                        const firstName =
+                            String(
+                                formData.get("first_name") || ""
+                            ).trim();
+
+                        const service =
+                            String(
+                                formData.get("service") || ""
+                            ).trim();
+
+                        const thankYouParams =
+                            new URLSearchParams();
+
+                        if (firstName) {
+                            thankYouParams.set(
+                                "name",
+                                firstName
+                            );
+                        }
+
+                        if (service) {
+                            thankYouParams.set(
+                                "service",
+                                service
+                            );
+                        }
+
+                        const thankYouQuery =
+                            thankYouParams.toString();
+
+                        window.location.href =
+                            "thank-you.html" +
+                            (
+                                thankYouQuery
+                                    ? "?" + thankYouQuery
+                                    : ""
+                            );
+
+                    }
+                );
+
+
+                /* ==================================================
+                   OPTIONAL SERVICE PARAMETER
+                   ================================================== */
+
+                const params =
+                    new URLSearchParams(
+                        window.location.search
+                    );
+
+
+                const requestedService =
+                    params.get("service");
+
+
+                if (requestedService) {
+
+
+                    const matchingCard =
+                        serviceCards.find(
+                            function (card) {
+
+                                return (
+                                    card.dataset.serviceKey ===
+                                    requestedService
+                                );
+
+                            }
+                        );
+
+
+                    if (matchingCard) {
+
+                        matchingCard.click();
+
+                    }
+
+                }
+
+
+            }
+        );
+
+    </script>
+</body>
+</html>

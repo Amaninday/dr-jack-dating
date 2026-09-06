@@ -1,0 +1,3279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lectures &amp; Video Library | Rabbi Dr. Jack Cohen</title>
+<meta content="Watch Rabbi Dr. Jack Cohen speak about Jewish dating, marriage, attraction, relationships, faith, communication, happiness, and building healthier relationships." name="description"/>
+
+<link rel="icon" type="image/png" href="assets/images/branding/favicon.png">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<style>
+
+        /* ======================================================
+           HERO
+           ====================================================== */
+
+        .lectures-page-hero {
+            position: relative;
+            width: calc(100% - 60px);
+            max-width: 1950px;
+            min-height: 690px;
+            margin: 0 auto;
+
+            display: flex;
+            align-items: flex-end;
+
+            overflow: hidden;
+            border-radius: 28px;
+
+            background:
+                radial-gradient(
+                    circle at 82% 20%,
+                    rgba(193, 154, 83, 0.13),
+                    transparent 32%
+                ),
+                linear-gradient(
+                    120deg,
+                    #031522 0%,
+                    #082c47 55%,
+                    #134b68 100%
+                );
+
+            color: white;
+        }
+
+
+        .lectures-page-hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(3, 21, 34, 1) 0%,
+                    rgba(3, 21, 34, 0.97) 38%,
+                    rgba(3, 21, 34, 0.78) 63%,
+                    rgba(3, 21, 34, 0.24) 100%
+                );
+
+            pointer-events: none;
+        }
+
+
+        .lectures-page-hero-inner {
+            position: relative;
+            z-index: 2;
+
+            width: 100%;
+
+            padding:
+                100px
+                clamp(48px, 6vw, 110px)
+                80px;
+        }
+
+
+        .lectures-page-eyebrow {
+            margin: 0 0 24px;
+
+            color: var(--gold-light);
+
+            font-family: var(--font-display);
+            font-size: 13px;
+            font-weight: 800;
+
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+
+        .lectures-page-hero h1 {
+            max-width: 1150px;
+            margin: 0;
+
+            font-family: var(--font-serif);
+            font-size: clamp(72px, 7vw, 122px);
+            font-weight: 700;
+
+            line-height: 0.91;
+            letter-spacing: -0.055em;
+        }
+
+
+        .lectures-page-description {
+            max-width: 780px;
+            margin: 33px 0 0;
+
+            color: rgba(255, 255, 255, 0.72);
+
+            font-size: 20px;
+            line-height: 1.72;
+        }
+
+
+        /* ======================================================
+           PREFACE
+           ====================================================== */
+
+        .lectures-preface {
+            padding: 90px 0;
+
+            background: var(--navy);
+            color: white;
+        }
+
+
+        .lectures-preface-grid {
+            display: grid;
+
+            grid-template-columns:
+                minmax(280px, 0.7fr)
+                minmax(0, 1.3fr);
+
+            gap: clamp(50px, 8vw, 130px);
+
+            align-items: start;
+        }
+
+
+        .lectures-preface strong {
+            color: var(--gold-light);
+
+            font-family: var(--font-display);
+            font-size: 13px;
+            font-weight: 800;
+
+            line-height: 1.8;
+            letter-spacing: 0.16em;
+
+            text-transform: uppercase;
+        }
+
+
+        .lectures-preface p {
+            max-width: 850px;
+            margin: 0;
+
+            color: rgba(255, 255, 255, 0.73);
+
+            font-family: var(--font-serif);
+            font-size: clamp(30px, 2.8vw, 47px);
+
+            line-height: 1.3;
+        }
+
+
+        /* ======================================================
+           LIBRARY
+           ====================================================== */
+
+        .lecture-library {
+            padding: 120px 0 140px;
+
+            background: var(--cream);
+            color: var(--ink);
+        }
+
+
+        .lecture-library-top {
+            display: flex;
+
+            align-items: flex-end;
+            justify-content: space-between;
+
+            gap: 50px;
+
+            margin-bottom: 60px;
+        }
+
+
+        .lecture-library-heading p {
+            margin: 0 0 17px;
+
+            color: var(--gold-dark);
+
+            font-family: var(--font-display);
+            font-size: 12px;
+            font-weight: 800;
+
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+
+        .lecture-library-heading h2 {
+            max-width: 850px;
+            margin: 0;
+
+            font-family: var(--font-serif);
+
+            font-size: clamp(58px, 5.5vw, 95px);
+            font-weight: 700;
+
+            line-height: 0.93;
+            letter-spacing: -0.055em;
+        }
+
+
+        /* ======================================================
+           SEARCH
+           ====================================================== */
+
+        .lecture-search {
+            width: min(440px, 100%);
+        }
+
+
+        .lecture-search label {
+            display: block;
+
+            margin-bottom: 10px;
+
+            color: var(--body);
+
+            font-family: var(--font-display);
+            font-size: 10px;
+            font-weight: 800;
+
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+        }
+
+
+        .lecture-search-box {
+            position: relative;
+        }
+
+
+        .lecture-search-box input {
+            width: 100%;
+
+            padding: 17px 48px 17px 19px;
+
+            border:
+                1px solid
+                rgba(7, 34, 54, 0.15);
+
+            border-radius: 9px;
+
+            outline: none;
+
+            background: white;
+            color: var(--ink);
+
+            font-family: var(--font-body);
+            font-size: 15px;
+        }
+
+
+        .lecture-search-box input:focus {
+            border-color: var(--gold-dark);
+
+            box-shadow:
+                0 0 0 3px
+                rgba(183, 145, 73, 0.10);
+        }
+
+
+        .lecture-search-icon {
+            position: absolute;
+
+            right: 17px;
+            top: 50%;
+
+            transform: translateY(-50%);
+
+            color: var(--gold-dark);
+
+            pointer-events: none;
+        }
+
+
+        /* ======================================================
+           GRID
+           ====================================================== */
+
+        .lecture-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, minmax(0, 1fr));
+
+            gap: 48px 28px;
+        }
+
+
+        .lecture-card {
+            display: block;
+
+            width: 100%;
+            min-width: 0;
+
+            padding: 0;
+
+            border: 0;
+
+            background: transparent;
+
+            color: inherit;
+
+            font: inherit;
+
+            text-align: left;
+
+            cursor: pointer;
+        }
+
+
+        .lecture-card[hidden] {
+            display: none !important;
+        }
+
+
+        /* ======================================================
+           THUMBNAIL
+           ====================================================== */
+
+        .lecture-thumbnail {
+            position: relative;
+
+            width: 100%;
+
+            aspect-ratio: 16 / 9;
+
+            overflow: hidden;
+
+            border-radius: 18px;
+
+            background: #031522;
+
+            isolation: isolate;
+
+            box-shadow:
+                0 22px 50px
+                rgba(3, 25, 40, 0.12);
+        }
+
+
+        .lecture-thumbnail-image {
+            position: absolute;
+
+            z-index: 1;
+
+            top: 0;
+            right: 0;
+
+            width: 68%;
+            height: 100%;
+
+            display: block;
+
+            object-fit: cover;
+
+            object-position: 50% 43%;
+
+            transition:
+                transform
+                420ms
+                cubic-bezier(.2, .7, .2, 1);
+        }
+
+
+        .lecture-card:hover .lecture-thumbnail-image {
+            transform: scale(1.035);
+        }
+
+
+        /* ======================================================
+           NAVY IMAGE BLEND
+           ====================================================== */
+
+        .lecture-thumbnail-navy {
+            position: absolute;
+
+            z-index: 2;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            background:
+                linear-gradient(
+                    90deg,
+
+                    #031522 0%,
+
+                    #031522 24%,
+
+                    rgba(3, 21, 34, 1) 31%,
+
+                    rgba(3, 21, 34, 0.99) 38%,
+
+                    rgba(3, 21, 34, 0.94) 45%,
+
+                    rgba(3, 21, 34, 0.82) 53%,
+
+                    rgba(3, 21, 34, 0.59) 61%,
+
+                    rgba(3, 21, 34, 0.34) 69%,
+
+                    rgba(3, 21, 34, 0.15) 77%,
+
+                    rgba(3, 21, 34, 0.04) 85%,
+
+                    rgba(3, 21, 34, 0) 94%
+                );
+        }
+
+
+        .lecture-thumbnail-wash {
+            position: absolute;
+
+            z-index: 3;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            background:
+                linear-gradient(
+                    180deg,
+
+                    rgba(1, 14, 24, 0.08) 0%,
+
+                    rgba(1, 14, 24, 0.02) 40%,
+
+                    rgba(1, 14, 24, 0.08) 67%,
+
+                    rgba(1, 14, 24, 0.30) 100%
+                );
+        }
+
+
+        .lecture-thumbnail-seam {
+            position: absolute;
+
+            z-index: 4;
+
+            top: -10%;
+            bottom: -10%;
+
+            left: 35%;
+
+            width: 31%;
+
+            pointer-events: none;
+
+            background:
+                radial-gradient(
+                    ellipse at center,
+
+                    rgba(3, 21, 34, 0.58) 0%,
+
+                    rgba(3, 21, 34, 0.29) 38%,
+
+                    rgba(3, 21, 34, 0) 76%
+                );
+
+            filter: blur(12px);
+        }
+
+
+        /* ======================================================
+           NUMBER BADGE
+           ====================================================== */
+
+        .lecture-number {
+            position: absolute;
+
+            z-index: 10;
+
+            top: 17px;
+            left: 17px;
+
+            width: 52px;
+            height: 52px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 50%;
+
+            background: #e3b54f;
+
+            color: #08243a;
+
+            font-family: var(--font-display);
+
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+
+        /* ======================================================
+           THUMBNAIL TEXT
+
+           No category text at bottom of thumbnail anymore.
+           More vertical room is now available for long titles.
+           ====================================================== */
+
+        .lecture-thumbnail-copy {
+            position: absolute;
+
+            z-index: 7;
+
+            left: 24px;
+
+            top: 57%;
+
+            width: 47%;
+
+            transform: translateY(-50%);
+        }
+
+
+        .lecture-thumbnail-copy small {
+            display: block;
+
+            margin-bottom: 10px;
+
+            color: #d9ad54;
+
+            font-family: var(--font-display);
+
+            font-size: 9px;
+            font-weight: 800;
+
+            line-height: 1.35;
+
+            letter-spacing: 0.15em;
+
+            text-transform: uppercase;
+        }
+
+
+        .lecture-thumbnail-copy h3 {
+            margin: 0;
+
+            color: #ffffff;
+
+            font-family: var(--font-serif);
+
+            font-size: clamp(19px, 1.45vw, 29px);
+
+            font-weight: 700;
+
+            line-height: 1.02;
+
+            letter-spacing: -0.035em;
+
+            text-wrap: balance;
+        }
+
+
+        .lecture-card.long-title
+        .lecture-thumbnail-copy h3 {
+            font-size: clamp(18px, 1.3vw, 26px);
+        }
+
+
+        .lecture-card.very-long-title
+        .lecture-thumbnail-copy h3 {
+            font-size: clamp(17px, 1.15vw, 23px);
+
+            line-height: 1.04;
+        }
+
+
+        /* ======================================================
+           PLAY BUTTON
+           ====================================================== */
+
+        .lecture-play {
+            position: absolute;
+
+            z-index: 12;
+
+            left: 52%;
+            top: 52%;
+
+            width: 66px;
+            height: 66px;
+
+            display: grid;
+
+            place-items: center;
+
+            transform: translate(-50%, -50%);
+
+            border:
+                2px solid
+                rgba(255, 255, 255, 0.96);
+
+            border-radius: 50%;
+
+            background:
+                rgba(213, 167, 76, 0.94);
+
+            box-shadow:
+                0 15px 42px
+                rgba(0, 0, 0, 0.30);
+
+            transition:
+                transform 180ms ease,
+                background 180ms ease;
+        }
+
+
+        .lecture-play::after {
+            content: "";
+
+            width: 0;
+            height: 0;
+
+            margin-left: 5px;
+
+            border-top:
+                10px solid transparent;
+
+            border-bottom:
+                10px solid transparent;
+
+            border-left:
+                17px solid white;
+        }
+
+
+        .lecture-card:hover .lecture-play {
+            transform:
+                translate(-50%, -50%)
+                scale(1.09);
+
+            background: #c99a43;
+        }
+
+
+        /* ======================================================
+           TEXT BELOW THUMBNAIL
+           ====================================================== */
+
+        .lecture-copy {
+            padding-top: 18px;
+        }
+
+
+        .lecture-copy small {
+            display: block;
+
+            margin-bottom: 8px;
+
+            color: var(--gold-dark);
+
+            font-family: var(--font-display);
+
+            font-size: 10px;
+            font-weight: 800;
+
+            letter-spacing: 0.13em;
+
+            text-transform: uppercase;
+        }
+
+
+        .lecture-copy strong {
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            color: var(--navy);
+
+            font-family: var(--font-display);
+
+            font-size: 13px;
+            font-weight: 900;
+
+            letter-spacing: 0.025em;
+
+            text-transform: uppercase;
+        }
+
+
+        .lecture-copy strong span {
+            transition: transform 180ms ease;
+        }
+
+
+        .lecture-card:hover
+        .lecture-copy strong span {
+            transform: translateX(5px);
+        }
+
+
+        /* ======================================================
+           EMPTY SEARCH
+           ====================================================== */
+
+        .lecture-empty {
+            display: none;
+
+            padding: 90px 20px 20px;
+
+            text-align: center;
+        }
+
+
+        .lecture-empty.show {
+            display: block;
+        }
+
+
+        .lecture-empty h3 {
+            margin: 0;
+
+            font-family: var(--font-serif);
+
+            font-size: 45px;
+        }
+
+
+        .lecture-empty p {
+            margin: 15px 0 0;
+
+            color: var(--body);
+
+            font-size: 17px;
+        }
+
+
+        /* ======================================================
+           YOUTUBE MODAL
+           ====================================================== */
+
+        .lecture-modal {
+            position: fixed;
+
+            inset: 0;
+
+            z-index: 99999;
+
+            display: none;
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 30px;
+
+            background:
+                rgba(1, 12, 20, 0.92);
+
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+
+
+        .lecture-modal.open {
+            display: flex;
+        }
+
+
+        .lecture-modal-dialog {
+            position: relative;
+
+            width: min(1260px, 96vw);
+
+            max-height: 94vh;
+
+            overflow: hidden;
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.13);
+
+            border-radius: 23px;
+
+            background: #031522;
+
+            box-shadow:
+                0 50px 130px
+                rgba(0, 0, 0, 0.52);
+
+            animation:
+                lectureModalIn
+                230ms
+                ease-out;
+        }
+
+
+        @keyframes lectureModalIn {
+
+            from {
+                opacity: 0;
+
+                transform:
+                    translateY(15px)
+                    scale(0.985);
+            }
+
+            to {
+                opacity: 1;
+
+                transform:
+                    translateY(0)
+                    scale(1);
+            }
+
+        }
+
+
+        .lecture-modal-header {
+            min-height: 84px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 28px;
+
+            padding: 18px 24px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #031522,
+                    #092c45
+                );
+
+            border-bottom:
+                1px solid
+                rgba(255, 255, 255, 0.09);
+        }
+
+
+        .lecture-modal-heading {
+            min-width: 0;
+        }
+
+
+        .lecture-modal-heading small {
+            display: block;
+
+            margin-bottom: 6px;
+
+            color: #d9ad54;
+
+            font-family: var(--font-display);
+
+            font-size: 9px;
+            font-weight: 800;
+
+            letter-spacing: 0.15em;
+
+            text-transform: uppercase;
+        }
+
+
+        .lecture-modal-heading h3 {
+            max-width: 1000px;
+
+            margin: 0;
+
+            color: white;
+
+            font-family: var(--font-serif);
+
+            font-size: clamp(18px, 2vw, 26px);
+
+            font-weight: 700;
+
+            line-height: 1.12;
+        }
+
+
+        .lecture-modal-close {
+            flex: 0 0 auto;
+
+            width: 48px;
+            height: 48px;
+
+            display: grid;
+
+            place-items: center;
+
+            padding: 0;
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.22);
+
+            border-radius: 50%;
+
+            background:
+                rgba(255, 255, 255, 0.07);
+
+            color: white;
+
+            font-size: 27px;
+
+            line-height: 1;
+
+            cursor: pointer;
+
+            transition:
+                background 180ms ease,
+                transform 180ms ease;
+        }
+
+
+        .lecture-modal-close:hover {
+            background:
+                rgba(255, 255, 255, 0.14);
+
+            transform: rotate(5deg);
+        }
+
+
+        .lecture-modal-video {
+            position: relative;
+
+            width: 100%;
+
+            aspect-ratio: 16 / 9;
+
+            background: #000000;
+        }
+
+
+        .lecture-modal-video iframe {
+            position: absolute;
+
+            inset: 0;
+
+            width: 100%;
+            height: 100%;
+
+            display: block;
+
+            border: 0;
+
+            background: black;
+        }
+
+
+        /* ======================================================
+           LIBRARY NOTE
+           ====================================================== */
+
+        .lecture-library-note {
+            margin-top: 80px;
+
+            padding-top: 34px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 40px;
+
+            border-top:
+                1px solid
+                var(--line);
+        }
+
+
+        .lecture-library-note strong {
+            color: var(--gold-dark);
+
+            font-family: var(--font-display);
+
+            font-size: 12px;
+            font-weight: 800;
+
+            letter-spacing: 0.14em;
+
+            text-transform: uppercase;
+        }
+
+
+        .lecture-library-note p {
+            max-width: 650px;
+
+            margin: 0;
+
+            color: var(--body);
+
+            font-size: 16px;
+
+            line-height: 1.7;
+        }
+
+
+        /* ======================================================
+           FINAL CTA
+           ====================================================== */
+
+        .lectures-final-cta {
+            padding: 130px 0;
+
+            background: var(--gold);
+
+            color: var(--navy);
+
+            text-align: center;
+        }
+
+
+        .lectures-final-cta small {
+            font-family: var(--font-display);
+
+            font-size: 12px;
+            font-weight: 800;
+
+            letter-spacing: 0.16em;
+
+            text-transform: uppercase;
+        }
+
+
+        .lectures-final-cta h2 {
+            max-width: 1100px;
+
+            margin: 24px auto 0;
+
+            font-family: var(--font-serif);
+
+            font-size: clamp(68px, 6.5vw, 108px);
+
+            font-weight: 700;
+
+            line-height: 0.91;
+
+            letter-spacing: -0.055em;
+        }
+
+
+        .lectures-final-cta p {
+            max-width: 680px;
+
+            margin: 30px auto 0;
+
+            color:
+                rgba(6, 34, 56, 0.72);
+
+            font-size: 18px;
+
+            line-height: 1.7;
+        }
+
+
+        .lectures-final-cta .button {
+            margin-top: 38px;
+        }
+
+
+        /* ======================================================
+           TABLET
+           ====================================================== */
+
+        @media (max-width: 1180px) {
+
+            .lectures-page-hero {
+                width: calc(100% - 36px);
+            }
+
+
+            .lecture-library-top {
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+
+
+            .lecture-search {
+                width: 100%;
+            }
+
+
+            .lecture-grid {
+                grid-template-columns:
+                    repeat(2, minmax(0, 1fr));
+            }
+
+
+            .lecture-thumbnail-copy h3 {
+                font-size: clamp(22px, 2.5vw, 31px);
+            }
+
+
+            .lecture-card.long-title
+            .lecture-thumbnail-copy h3 {
+                font-size: clamp(20px, 2.25vw, 28px);
+            }
+
+
+            .lecture-card.very-long-title
+            .lecture-thumbnail-copy h3 {
+                font-size: clamp(18px, 2vw, 25px);
+            }
+
+        }
+
+
+        /* ======================================================
+           MOBILE
+           ====================================================== */
+
+        @media (max-width: 720px) {
+
+            .lectures-page-hero {
+                width: calc(100% - 10px);
+
+                min-height: 680px;
+
+                border-radius: 20px;
+            }
+
+
+            .lectures-page-hero-inner {
+                padding:
+                    80px
+                    24px
+                    42px;
+            }
+
+
+            .lectures-page-hero h1 {
+                font-size: 57px;
+            }
+
+
+            .lectures-page-description {
+                font-size: 16px;
+            }
+
+
+            .lectures-preface {
+                padding: 75px 0;
+            }
+
+
+            .lectures-preface-grid {
+                grid-template-columns: 1fr;
+
+                gap: 30px;
+            }
+
+
+            .lectures-preface p {
+                font-size: 30px;
+            }
+
+
+            .lecture-library {
+                padding: 85px 0;
+            }
+
+
+            .lecture-library-heading h2 {
+                font-size: 54px;
+            }
+
+
+            .lecture-grid {
+                grid-template-columns: 1fr;
+
+                gap: 42px;
+            }
+
+
+            .lecture-thumbnail-copy {
+                left: 20px;
+
+                top: 57%;
+
+                width: 48%;
+            }
+
+
+            .lecture-thumbnail-copy h3 {
+                font-size: clamp(20px, 5.2vw, 28px);
+            }
+
+
+            .lecture-card.long-title
+            .lecture-thumbnail-copy h3 {
+                font-size: clamp(18px, 4.7vw, 25px);
+            }
+
+
+            .lecture-card.very-long-title
+            .lecture-thumbnail-copy h3 {
+                font-size: clamp(17px, 4.3vw, 22px);
+            }
+
+
+            .lecture-thumbnail-copy small {
+                font-size: 8px;
+
+                margin-bottom: 8px;
+            }
+
+
+            .lecture-number {
+                width: 46px;
+                height: 46px;
+
+                top: 14px;
+                left: 14px;
+            }
+
+
+            .lecture-play {
+                width: 58px;
+                height: 58px;
+
+                left: 53%;
+            }
+
+
+            .lecture-modal {
+                padding: 8px;
+            }
+
+
+            .lecture-modal-dialog {
+                width: 100%;
+
+                border-radius: 14px;
+            }
+
+
+            .lecture-modal-header {
+                min-height: 72px;
+
+                padding: 13px 14px;
+            }
+
+
+            .lecture-modal-heading h3 {
+                max-width: 270px;
+
+                font-size: 17px;
+            }
+
+
+            .lecture-modal-heading small {
+                font-size: 8px;
+            }
+
+
+            .lecture-modal-close {
+                width: 40px;
+                height: 40px;
+
+                font-size: 23px;
+            }
+
+
+            .lecture-library-note {
+                margin-top: 60px;
+
+                flex-direction: column;
+
+                gap: 17px;
+            }
+
+
+            .lectures-final-cta {
+                padding: 85px 0;
+            }
+
+
+            .lectures-final-cta h2 {
+                font-size: 54px;
+            }
+
+        }
+
+    </style>
+<style id="universal-final-cta-fix">
+/* =========================================================
+   UNIVERSAL FINAL CONSULTATION CTA
+   Centered copy + centered button + last-section background video
+   ========================================================= */
+
+.universal-final-cta {
+    position: relative !important;
+    isolation: isolate !important;
+    overflow: hidden !important;
+
+    min-height: 650px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 105px 24px !important;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(3, 21, 34, 0.22) 0%,
+            rgba(3, 21, 34, 0.48) 46%,
+            rgba(3, 21, 34, 0.82) 100%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(3, 21, 34, 0.74) 0%,
+            rgba(3, 21, 34, 0.26) 55%,
+            rgba(3, 21, 34, 0.38) 100%
+        ),
+        linear-gradient(rgba(3,21,34,0),rgba(3,21,34,0))
+        center center / cover no-repeat !important;
+
+    color: #ffffff !important;
+    text-align: center !important;
+}
+
+.universal-final-cta::before {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 0 !important;
+
+    background:
+        radial-gradient(
+            circle at 50% 42%,
+            rgba(3, 21, 34, 0.00) 0%,
+            rgba(3, 21, 34, 0.10) 28%,
+            rgba(3, 21, 34, 0.34) 62%,
+            rgba(3, 21, 34, 0.67) 100%
+        ) !important;
+
+    pointer-events: none !important;
+}
+
+.universal-final-cta::after {
+    display: none !important;
+}
+
+.universal-final-cta > .container,
+.universal-final-cta .consultation-layout,
+.universal-final-cta .insights-consultation-inner {
+    position: relative !important;
+    z-index: 2 !important;
+
+    width: min(1180px, 100%) !important;
+    max-width: 1180px !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+
+    text-align: center !important;
+}
+
+.universal-final-cta > * {
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.universal-final-cta .section-label,
+.universal-final-cta small,
+.universal-final-cta > p:first-child {
+    margin: 0 auto 22px !important;
+
+    color: var(--gold-light, #efca72) !important;
+
+    font-family: var(--font-display, "Manrope", Arial, sans-serif) !important;
+    font-size: 13px !important;
+    font-weight: 800 !important;
+    line-height: 1.45 !important;
+    letter-spacing: 0.16em !important;
+
+    text-align: center !important;
+    text-transform: uppercase !important;
+
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.48) !important;
+}
+
+.universal-final-cta h2 {
+    max-width: 1120px !important;
+
+    margin: 0 auto !important;
+
+    color: #ffffff !important;
+
+    font-family: var(--font-serif, "Playfair Display", Georgia, serif) !important;
+    font-size: clamp(58px, 6.2vw, 104px) !important;
+    font-weight: 700 !important;
+    line-height: 0.94 !important;
+    letter-spacing: -0.05em !important;
+
+    text-align: center !important;
+
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.54) !important;
+}
+
+.universal-final-cta .consultation-description,
+.universal-final-cta h2 + p,
+.universal-final-cta > h2 + p {
+    max-width: 760px !important;
+
+    margin: 28px auto 0 !important;
+
+    color: rgba(255, 255, 255, 0.92) !important;
+
+    font-size: 18px !important;
+    line-height: 1.7 !important;
+
+    text-align: center !important;
+
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.50) !important;
+}
+
+.universal-final-cta .consultation-action {
+    width: 100% !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin: 36px auto 0 !important;
+
+    text-align: center !important;
+}
+
+.universal-final-cta .button,
+.universal-final-cta .service-final-button {
+    position: relative !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: auto !important;
+    min-width: min(380px, 100%) !important;
+    min-height: 56px !important;
+
+    margin: 36px auto 0 !important;
+    padding: 16px 30px !important;
+
+    border: 0 !important;
+    border-radius: 999px !important;
+
+    background: var(--gold, #dfb452) !important;
+    color: var(--navy-deep, #031522) !important;
+
+    font-family: var(--font-display, "Manrope", Arial, sans-serif) !important;
+    font-size: 14px !important;
+    font-weight: 900 !important;
+    line-height: 1.2 !important;
+
+    text-align: center !important;
+    text-decoration: none !important;
+
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.22) !important;
+
+    transform: none !important;
+}
+
+.universal-final-cta .consultation-action .button {
+    margin-top: 0 !important;
+}
+
+.universal-final-cta .button:hover,
+.universal-final-cta .service-final-button:hover {
+    transform: translateY(-2px) !important;
+}
+
+.universal-final-cta .consultation-action > p,
+.universal-final-cta .insights-consultation-note {
+    margin: 14px auto 0 !important;
+
+    color: rgba(255, 255, 255, 0.72) !important;
+
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+
+    text-align: center !important;
+}
+
+@media (max-width: 720px) {
+    .universal-final-cta {
+        min-height: 540px !important;
+        padding: 78px 20px !important;
+        background-position: center center !important;
+    }
+
+    .universal-final-cta h2 {
+        font-size: clamp(44px, 13vw, 64px) !important;
+    }
+
+    .universal-final-cta .consultation-description,
+    .universal-final-cta h2 + p,
+    .universal-final-cta > h2 + p {
+        font-size: 16px !important;
+    }
+
+    .universal-final-cta .button,
+    .universal-final-cta .service-final-button {
+        width: min(100%, 420px) !important;
+        min-width: 0 !important;
+
+        padding: 15px 22px !important;
+
+        font-size: 13px !important;
+    }
+}
+</style>
+<style id="lectures-hero-slow-image-fade-final">
+/* =========================================================
+   LECTURES HERO — LARGER + TRUE SLOW IMAGE-EDGE FADE
+
+   Instead of hiding a hard image edge with an opaque overlay,
+   the IMAGE ITSELF now fades gradually into the navy base.
+   This eliminates the visible vertical seam.
+   ========================================================= */
+
+.lectures-page-hero {
+    position: relative !important;
+    isolation: isolate !important;
+    overflow: hidden !important;
+
+    width: calc(100% - 60px) !important;
+    max-width: 1950px !important;
+
+    min-height: 690px !important;
+    height: 690px !important;
+
+    margin: 0 auto !important;
+
+    display: flex !important;
+    align-items: flex-end !important;
+
+    border-radius: 28px !important;
+
+    background: #031522 !important;
+    color: #ffffff !important;
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE LAYER
+   The image occupies the right side, but its LEFT EDGE
+   fades in gradually via CSS mask. There is no hard edge.
+   --------------------------------------------------------- */
+
+.lectures-page-hero::before {
+    content: "" !important;
+
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+
+    width: 72% !important;
+
+    z-index: 0 !important;
+    pointer-events: none !important;
+
+    background-color: transparent !important;
+
+    background-image:
+        url("assets/images/lectures/lectures-hero-bg.png?v=20260906-1905"),
+        url("assets/images/lectures/lectures-hero.png?v=20260906-1905") !important;
+
+    background-repeat:
+        no-repeat,
+        no-repeat !important;
+
+    background-size:
+        cover,
+        cover !important;
+
+    background-position:
+        72% center,
+        72% center !important;
+
+    /* TRUE ALPHA FADE OF THE IMAGE ITSELF */
+    -webkit-mask-image:
+        linear-gradient(
+            90deg,
+            transparent 0%,
+            rgba(0,0,0,.05) 6%,
+            rgba(0,0,0,.14) 12%,
+            rgba(0,0,0,.28) 19%,
+            rgba(0,0,0,.46) 27%,
+            rgba(0,0,0,.65) 35%,
+            rgba(0,0,0,.82) 43%,
+            rgba(0,0,0,.94) 51%,
+            #000 60%,
+            #000 100%
+        ) !important;
+
+    mask-image:
+        linear-gradient(
+            90deg,
+            transparent 0%,
+            rgba(0,0,0,.05) 6%,
+            rgba(0,0,0,.14) 12%,
+            rgba(0,0,0,.28) 19%,
+            rgba(0,0,0,.46) 27%,
+            rgba(0,0,0,.65) 35%,
+            rgba(0,0,0,.82) 43%,
+            rgba(0,0,0,.94) 51%,
+            #000 60%,
+            #000 100%
+        ) !important;
+}
+
+
+/* ---------------------------------------------------------
+   VERY LIGHT CINEMATIC WASH ONLY
+   No heavy left-to-right block anymore.
+   --------------------------------------------------------- */
+
+.lectures-page-hero::after {
+    content: "" !important;
+
+    position: absolute !important;
+    inset: 0 !important;
+
+    z-index: 1 !important;
+    pointer-events: none !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3,21,34,.20) 0%,
+            rgba(3,21,34,.10) 42%,
+            rgba(3,21,34,.04) 65%,
+            rgba(3,21,34,.00) 82%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(3,21,34,.02) 0%,
+            rgba(3,21,34,.03) 50%,
+            rgba(3,21,34,.22) 100%
+        ) !important;
+}
+
+
+/* ---------------------------------------------------------
+   COPY — slightly larger because hero is larger again
+   --------------------------------------------------------- */
+
+.lectures-page-hero-inner {
+    position: relative !important;
+    z-index: 2 !important;
+
+    width: 100% !important;
+    max-width: 830px !important;
+
+    margin: 0 !important;
+
+    padding:
+        78px
+        clamp(52px, 6vw, 112px)
+        72px !important;
+}
+
+.lectures-page-eyebrow {
+    margin: 0 0 20px !important;
+
+    font-size: 11px !important;
+    line-height: 1.35 !important;
+    letter-spacing: .16em !important;
+}
+
+.lectures-page-hero h1 {
+    max-width: 760px !important;
+    margin: 0 !important;
+
+    font-size:
+        clamp(
+            62px,
+            5.4vw,
+            94px
+        ) !important;
+
+    line-height: .94 !important;
+    letter-spacing: -.05em !important;
+}
+
+.lectures-page-description {
+    max-width: 650px !important;
+
+    margin: 28px 0 0 !important;
+
+    font-size: 18px !important;
+    line-height: 1.6 !important;
+
+    color: rgba(255,255,255,.80) !important;
+}
+
+
+/* ---------------------------------------------------------
+   LARGE DESKTOP
+   --------------------------------------------------------- */
+
+@media (min-width: 1500px) {
+
+    .lectures-page-hero {
+        min-height: 710px !important;
+        height: 710px !important;
+    }
+
+    .lectures-page-hero::before {
+        width: 73% !important;
+
+        background-position:
+            74% center,
+            74% center !important;
+    }
+
+    .lectures-page-hero h1 {
+        font-size:
+            clamp(
+                64px,
+                5vw,
+                98px
+            ) !important;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   TABLET
+   --------------------------------------------------------- */
+
+@media (max-width: 1180px) {
+
+    .lectures-page-hero {
+        width: calc(100% - 36px) !important;
+
+        min-height: 650px !important;
+        height: 650px !important;
+    }
+
+    .lectures-page-hero::before {
+        width: 78% !important;
+
+        background-position:
+            70% center,
+            70% center !important;
+
+        -webkit-mask-image:
+            linear-gradient(
+                90deg,
+                transparent 0%,
+                rgba(0,0,0,.08) 8%,
+                rgba(0,0,0,.26) 18%,
+                rgba(0,0,0,.52) 30%,
+                rgba(0,0,0,.76) 42%,
+                rgba(0,0,0,.93) 54%,
+                #000 64%,
+                #000 100%
+            ) !important;
+
+        mask-image:
+            linear-gradient(
+                90deg,
+                transparent 0%,
+                rgba(0,0,0,.08) 8%,
+                rgba(0,0,0,.26) 18%,
+                rgba(0,0,0,.52) 30%,
+                rgba(0,0,0,.76) 42%,
+                rgba(0,0,0,.93) 54%,
+                #000 64%,
+                #000 100%
+            ) !important;
+    }
+
+    .lectures-page-hero-inner {
+        max-width: 720px !important;
+
+        padding:
+            68px
+            50px
+            60px !important;
+    }
+
+    .lectures-page-hero h1 {
+        max-width: 680px !important;
+
+        font-size:
+            clamp(
+                54px,
+                6.5vw,
+                76px
+            ) !important;
+    }
+
+    .lectures-page-description {
+        max-width: 585px !important;
+        font-size: 16.5px !important;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 720px) {
+
+    .lectures-page-hero {
+        width: calc(100% - 10px) !important;
+
+        min-height: 640px !important;
+        height: auto !important;
+
+        border-radius: 20px !important;
+    }
+
+    .lectures-page-hero::before {
+        width: 100% !important;
+        inset: 0 !important;
+
+        background-position:
+            68% center,
+            68% center !important;
+
+        -webkit-mask-image:
+            linear-gradient(
+                0deg,
+                #000 0%,
+                #000 38%,
+                rgba(0,0,0,.92) 52%,
+                rgba(0,0,0,.72) 66%,
+                rgba(0,0,0,.44) 79%,
+                rgba(0,0,0,.16) 91%,
+                transparent 100%
+            ) !important;
+
+        mask-image:
+            linear-gradient(
+                0deg,
+                #000 0%,
+                #000 38%,
+                rgba(0,0,0,.92) 52%,
+                rgba(0,0,0,.72) 66%,
+                rgba(0,0,0,.44) 79%,
+                rgba(0,0,0,.16) 91%,
+                transparent 100%
+            ) !important;
+    }
+
+    .lectures-page-hero::after {
+        background:
+            linear-gradient(
+                0deg,
+                rgba(3,21,34,.98) 0%,
+                rgba(3,21,34,.88) 46%,
+                rgba(3,21,34,.46) 72%,
+                rgba(3,21,34,.12) 100%
+            ) !important;
+    }
+
+    .lectures-page-hero-inner {
+        max-width: none !important;
+
+        padding:
+            76px
+            24px
+            50px !important;
+    }
+
+    .lectures-page-hero h1 {
+        max-width: 590px !important;
+
+        font-size:
+            clamp(
+                46px,
+                12vw,
+                60px
+            ) !important;
+    }
+
+    .lectures-page-description {
+        max-width: 535px !important;
+
+        margin-top: 22px !important;
+
+        font-size: 15px !important;
+        line-height: 1.55 !important;
+    }
+}
+</style>
+
+<style id="services-dropdown-arrow-only-fix">
+/* =========================================================
+   ONLY ARROW ALLOWED ON THE WEBSITE:
+   SERVICES DROPDOWN CHEVRON
+   ========================================================= */
+
+.nav-dropdown-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 7px !important;
+}
+
+.services-dropdown-arrow {
+    display: inline-block !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    color: #e7b64f !important;
+
+    font-size: 11px !important;
+    font-weight: 800 !important;
+    line-height: 1 !important;
+
+    transform: translateY(-1px) !important;
+    transform-origin: center !important;
+
+    transition: transform 180ms ease !important;
+}
+
+.nav-dropdown-button[aria-expanded="true"] .services-dropdown-arrow {
+    transform:
+        translateY(-1px)
+        rotate(180deg) !important;
+}
+</style>
+
+
+<style id="animated-media-video-fix">
+/* Animated media now uses HTML5 video instead of image animation files. */
+
+.loop-video-section {
+    position: relative !important;
+    isolation: isolate !important;
+    overflow: hidden !important;
+    background-color: #031522 !important;
+}
+
+.loop-bg-video {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    z-index: 0 !important;
+    pointer-events: none !important;
+    border: 0 !important;
+}
+
+#consultation.loop-video-section > .loop-bg-video,
+.universal-final-cta.loop-video-section > .loop-bg-video,
+.stories-final-cta.loop-video-section > .loop-bg-video {
+    position: absolute !important;
+    z-index: 0 !important;
+}
+
+#consultation.loop-video-section::before,
+.universal-final-cta.loop-video-section::before,
+.stories-final-cta.loop-video-section::before {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    display: block !important;
+    z-index: 1 !important;
+    pointer-events: none !important;
+    background:
+        radial-gradient(circle at 50% 43%,
+            rgba(3,21,34,.02) 0%,
+            rgba(3,21,34,.14) 28%,
+            rgba(3,21,34,.40) 60%,
+            rgba(3,21,34,.72) 100%),
+        linear-gradient(180deg,
+            rgba(3,21,34,.20) 0%,
+            rgba(3,21,34,.48) 48%,
+            rgba(3,21,34,.82) 100%),
+        linear-gradient(90deg,
+            rgba(3,21,34,.64) 0%,
+            rgba(3,21,34,.28) 48%,
+            rgba(3,21,34,.60) 100%) !important;
+}
+
+#consultation.loop-video-section::after,
+.universal-final-cta.loop-video-section::after,
+.stories-final-cta.loop-video-section::after {
+    content: none !important;
+    display: none !important;
+}
+
+#consultation.loop-video-section > *:not(.loop-bg-video),
+.universal-final-cta.loop-video-section > *:not(.loop-bg-video),
+.stories-final-cta.loop-video-section > *:not(.loop-bg-video) {
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+/* Home Success Stories loop */
+.tr-success-video {
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+}
+
+/* Success Stories presentation loop: keep faces high in the frame. */
+.success-frame {
+    overflow: hidden !important;
+}
+
+.success-presentation-video {
+    display: block !important;
+    width: 100% !important;
+    height: clamp(380px, 48vw, 760px) !important;
+    object-fit: cover !important;
+    object-position: center 12% !important;
+    background: #081f31 !important;
+}
+
+@media (max-width: 720px) {
+    .success-presentation-video {
+        height: clamp(340px, 72vw, 560px) !important;
+        object-position: center 8% !important;
+    }
+}
+</style>
+
+</head>
+<body>
+<!-- ======================================================
+         HEADER
+         ====================================================== -->
+<header class="site-header">
+<div class="header-inner">
+<a aria-label="Dr. Jack Dating home" class="brand" href="index.html">
+<img alt="Dr. Jack Dating" class="brand-logo" src="assets/images/branding/dr-jack-logo.png"/>
+</a>
+<nav aria-label="Main navigation" class="desktop-nav">
+<a class="nav-link" href="index.html">
+                    Home</a>
+<a class="nav-link" href="about.html">
+                    Meet Dr. Jack</a>
+<div class="nav-dropdown">
+<button class="nav-dropdown-button" type="button">
+Services
+<span class="services-dropdown-arrow" aria-hidden="true">▾</span>
+</button>
+<div class="nav-dropdown-menu">
+<a href="services/dating.html">
+<small>
+                                FOR SINGLES
+                            </small>
+<span>
+                                Dating Guidance
+                            </span>
+</a>
+<a href="services/matchmaking.html">
+<small>
+                                FOR A PERSONAL INTRODUCTION
+                            </small>
+<span>
+                                Matchmaking
+                            </span>
+</a>
+<a href="services/relationship-clarity.html">
+<small>
+                                FOR RELATIONSHIP DECISIONS
+                            </small>
+<span>
+                                Relationship Clarity
+                            </span>
+</a>
+<a href="services/marriage.html">
+<small>
+                                FOR COUPLES
+                            </small>
+<span>
+                                Marriage Guidance
+                            </span>
+</a>
+<a href="services/pre-marriage.html">
+<small>
+                                BEFORE MARRIAGE
+                            </small>
+<span>
+                                Pre-Marriage Guidance
+                            </span>
+</a>
+<a href="services/events-speaking.html">
+<small>
+                                LECTURES &amp; EVENTS
+                            </small>
+<span>
+                                Events &amp; Speaking
+                            </span>
+</a>
+</div>
+</div>
+<a class="nav-link" href="success-stories.html">
+                    Success Stories</a>
+<a class="nav-link" href="insights.html">
+                    Insights</a>
+<a class="nav-link active" href="lectures.html">
+                    Lectures</a>
+</nav>
+<a class="header-cta" href="booking.html">
+                Book a Private Consultation</a>
+<button aria-expanded="false" aria-label="Open navigation" class="mobile-menu-button" id="mobileMenuButton" type="button">
+<span></span>
+<span></span>
+</button>
+</div>
+<nav aria-label="Mobile navigation" class="mobile-navigation" id="mobileNavigation">
+<a href="index.html">
+                Home</a>
+<a href="about.html">
+                Meet Dr. Jack</a>
+<button class="mobile-services-button" id="mobileServicesButton" type="button">
+<span>
+                    Services
+                </span>
+</button>
+<div class="mobile-services-menu" id="mobileServicesMenu">
+<a href="services/dating.html">
+                    Dating Guidance</a>
+<a href="services/matchmaking.html">
+                    Matchmaking</a>
+<a href="services/relationship-clarity.html">
+                    Relationship Clarity</a>
+<a href="services/marriage.html">
+                    Marriage Guidance</a>
+<a href="services/pre-marriage.html">
+                    Pre-Marriage Guidance</a>
+<a href="services/events-speaking.html">
+                    Events &amp; Speaking</a>
+</div>
+<a href="success-stories.html">
+                Success Stories</a>
+<a href="insights.html">
+                Insights</a>
+<a href="lectures.html">
+                Lectures</a>
+<a class="mobile-consultation" href="booking.html">
+                Book a Private Consultation</a>
+</nav>
+</header>
+<main>
+<!-- ==================================================
+             HERO
+             ================================================== -->
+<section class="lectures-page-hero">
+<div class="lectures-page-hero-inner">
+<p class="lectures-page-eyebrow">
+                    THE DR. JACK DATING ACADEMY · VIDEO LIBRARY
+                </p>
+<h1>
+                    Press play on the question you have been afraid to ask.
+                </h1>
+<p class="lectures-page-description">
+                    Listen to Dr. Jack speak about dating,
+                    marriage, attraction, conflict, faith,
+                    happiness, communication, and the honest
+                    work of becoming a healthier partner.
+                </p>
+</div>
+</section>
+<!-- ==================================================
+             LIBRARY
+             ================================================== -->
+<section class="lecture-library">
+<div class="container">
+<div class="lecture-library-top">
+<div class="lecture-library-heading">
+<p>
+                            SELECTED FROM DR. JACK'S VIDEO LIBRARY
+                        </p>
+<h2>
+                            Find the conversation you need right now.
+                        </h2>
+</div>
+<div class="lecture-search">
+<label for="lectureSearch">
+                            Search the video library
+                        </label>
+<div class="lecture-search-box">
+<input autocomplete="off" id="lectureSearch" placeholder="Try marriage, dating, happiness…" type="search"/>
+<span aria-hidden="true" class="lecture-search-icon">
+                                ⌕
+                            </span>
+</div>
+</div>
+</div>
+<div class="lecture-grid" id="lectureGrid"></div>
+<div class="lecture-empty" id="lectureEmpty">
+<h3>
+                        No matching lecture found.
+                    </h3>
+<p>
+                        Try dating, marriage, happiness,
+                        love, matchmaking, family, or faith.
+                    </p>
+</div>
+<div class="lecture-library-note">
+<strong>
+                        SELECTED FROM<br/>
+                        500+ LECTURES
+                    </strong>
+<p>
+                        Dr. Jack's teaching library spans Jewish dating,
+                        matchmaking, marriage, relationships, Torah,
+                        faith, happiness, communication, and the
+                        decisions that shape a Jewish home.
+                    </p>
+</div>
+</div>
+</section>
+<!-- ==================================================
+             CTA
+             ================================================== -->
+<section class="lectures-final-cta universal-final-cta loop-video-section">
+<video class="loop-bg-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+<source src="assets/images/lectures/last-section.mp4" type="video/mp4">
+</video>
+<div class="container">
+<small>
+                    WHEN LISTENING IS NOT ENOUGH
+                </small>
+<h2>
+                    Your situation deserves a conversation of its own.
+                </h2>
+<p>
+                    If one of these lectures sounds uncomfortably
+                    familiar, bring your specific situation to
+                    a private conversation with Dr. Jack.
+                </p>
+<a class="button button-dark" href="booking.html">
+                    BOOK A PRIVATE CONSULTATION</a>
+</div>
+</section>
+</main>
+<!-- ======================================================
+         YOUTUBE VIDEO POPUP
+         ====================================================== -->
+<div aria-hidden="true" class="lecture-modal" id="lectureModal">
+<div aria-labelledby="lectureModalTitle" aria-modal="true" class="lecture-modal-dialog" role="dialog">
+<div class="lecture-modal-header">
+<div class="lecture-modal-heading">
+<small id="lectureModalEyebrow">
+                        RABBI DR. JACK COHEN · VIDEO LECTURE
+                    </small>
+<h3 id="lectureModalTitle">
+                        Lecture
+                    </h3>
+</div>
+<button aria-label="Close video" class="lecture-modal-close" id="lectureModalClose" type="button">
+                    ×
+                </button>
+</div>
+<div class="lecture-modal-video">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" id="lectureModalFrame" referrerpolicy="strict-origin-when-cross-origin" src="" title="Rabbi Dr. Jack Cohen video lecture"></iframe>
+</div>
+</div>
+</div>
+<!-- ======================================================
+         FOOTER
+         ====================================================== -->
+<footer class="site-footer">
+<div class="container footer-grid">
+<div class="footer-brand">
+<a aria-label="Dr. Jack Dating Home" class="footer-logo" href="index.html">
+<img alt="Dr. Jack Dating" src="assets/images/branding/dr-jack-logo.png"/>
+</a>
+<p>
+DATE WITH CLARITY.<br/>
+MARRY WITH CONFIDENCE.
+</p>
+</div>
+<div class="footer-column">
+<h3>
+Explore
+</h3>
+<a href="about.html">
+Meet Dr. Jack
+</a>
+<a href="success-stories.html">
+Success Stories
+</a>
+<a href="insights.html">
+Insights
+</a>
+<a href="lectures.html">
+Lectures
+</a>
+</div>
+<div class="footer-column">
+<h3>
+Services
+</h3>
+<a href="services/dating.html">
+Dating Guidance
+</a>
+<a href="services/matchmaking.html">
+Matchmaking
+</a>
+<a href="services/relationship-clarity.html">
+Relationship Clarity
+</a>
+<a href="services/marriage.html">
+Marriage Guidance
+</a>
+<a href="services/pre-marriage.html">
+Pre-Marriage Guidance
+</a>
+<a href="services/events-speaking.html">
+Events &amp; Speaking
+</a>
+</div>
+<div class="footer-contact">
+<h3>
+Contact Dr. Jack
+</h3>
+<div class="footer-contact-links">
+<a href="tel:+13052061916">
+305-206-1916
+</a>
+<a href="mailto:jcohen.dating@gmail.com">
+jcohen.dating@gmail.com
+</a>
+</div>
+<div aria-label="Dr. Jack Cohen social media and podcast links" class="footer-socials">
+<a aria-label="Facebook" class="footer-social-link" href="https://www.facebook.com/jack.cohen.581" rel="noopener noreferrer" target="_blank" title="Facebook">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.414c0-3.025 1.792-4.697 4.533-4.697 1.313 0 2.686.236 2.686.236v2.972h-1.513c-1.49 0-1.956.93-1.956 1.887v2.261h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"></path>
+</svg>
+<span>Facebook</span>
+</a>
+<a aria-label="Instagram" class="footer-social-link" href="https://www.instagram.com/rabbidr.jackcohen" rel="noopener noreferrer" target="_blank" title="Instagram">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5zm8.75 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"></path>
+</svg>
+<span>Instagram</span>
+</a>
+<a aria-label="TikTok" class="footer-social-link" href="https://www.tiktok.com/@jack.cohendating" rel="noopener noreferrer" target="_blank" title="TikTok">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M15.5 2c.33 2.86 1.93 4.57 4.5 4.75v3.22c-1.49.15-2.8-.34-4.45-1.35v6.02c0 7.64-8.33 10.03-11.68 4.55C1.72 15.67 3.04 9.5 9.95 8.96v3.39c-.49.08-1.01.21-1.49.37-1.43.48-2.25 1.38-2.02 2.95.44 3 5.93 3.89 6.39-.56V2h2.67z"></path>
+</svg>
+<span>TikTok</span>
+</a>
+<a aria-label="Spotify" class="footer-social-link" href="https://open.spotify.com/show/1MfsFgFGgZW7IoQM9G9pkc?si=fbf35315e7fb4515" rel="noopener noreferrer" target="_blank" title="Spotify">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.503 17.309a.747.747 0 0 1-1.028.248c-2.817-1.722-6.363-2.111-10.54-1.158a.748.748 0 1 1-.333-1.458c4.57-1.045 8.49-.597 11.654 1.337a.748.748 0 0 1 .247 1.031zm1.47-3.27a.936.936 0 0 1-1.287.309c-3.226-1.982-8.143-2.555-11.957-1.398a.936.936 0 1 1-.543-1.792c4.366-1.324 9.785-.684 13.478 1.584a.936.936 0 0 1 .309 1.297zm.126-3.404C15.23 8.337 8.85 8.126 5.156 9.247a1.123 1.123 0 1 1-.651-2.149C8.746 5.81 15.79 6.06 20.244 8.704a1.123 1.123 0 0 1-1.145 1.931z"></path>
+</svg>
+<span>Spotify</span>
+</a>
+<a aria-label="YouTube" class="footer-social-link" href="https://www.youtube.com/@DrJackCohen" rel="noopener noreferrer" target="_blank" title="YouTube">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.017 3.017 0 0 0 2.121 2.136c1.872.505 9.377.505 9.377.505s7.505 0 9.376-.505a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
+</svg>
+<span>YouTube</span>
+</a>
+<a aria-label="Amazon Music" class="footer-social-link amazon-music" href="https://music.amazon.com/podcasts/f4aac898-4a0e-401d-88ca-be237606399c/dr-jack-cohen's-dating-and-relationships-podcast" rel="noopener noreferrer" target="_blank" title="Amazon Music">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M6.1 15.8c3.7 2.2 8.3 2.2 11.9.1.6-.4 1.1.5.5 1-3.9 2.8-9.3 2.8-13.2.2-.7-.5 0-1.4.8-.9z"></path>
+<path d="M17.2 14.5c-.4-.5-2.5-.2-3.4-.1-.3 0-.4-.2-.1-.4 1.7-1.2 4.4-.8 4.7-.4.3.4-.1 3.1-1.7 4.4-.2.2-.5.1-.4-.2.3-.8 1.3-2.8.9-3.3z"></path>
+<path d="M14.9 12.8c-.7-.5-.9-.8-.9-1.6V8.5c0-1.1.1-2.1-.7-2.9-.6-.7-1.7-.9-2.5-.9-1.6 0-3.4.6-3.8 2.6-.1.4.2.6.5.7l1.7.2c.3 0 .5-.3.6-.6.1-.7.8-1 1.4-1 .3 0 .7.1.9.4.3.3.2.8.2 1.2v.2c-1 .1-2.3.2-3.3.6-1.2.5-2 1.5-2 3 0 1.9 1.2 2.9 2.8 2.9 1.4 0 2.1-.3 3.2-1.4.4.5.6.8 1.4 1.4.3.2.6.2.8-.1.5-.4 1.3-1.1 1.7-1.5.3-.1.2-.4 0-.5zm-2.7-2.6c0 .7 0 1.3-.3 1.9-.3.5-.7.8-1.2.8-.7 0-1.1-.5-1.1-1.3 0-1.6 1.4-1.9 2.7-1.9v.5z"></path>
+</svg>
+<span>Amazon Music</span>
+</a>
+</div>
+</div>
+</div>
+<div class="container footer-bottom">
+<span>
+© 2026 Dr. Jack Dating
+</span>
+<span>
+Private · Personal · Torah-rooted
+</span>
+</div>
+</footer>
+<script src="assets/js/main.js"></script>
+<script>
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
+
+
+                /* ==================================================
+                   ALL 17 LECTURES
+                   ================================================== */
+
+                const lectures = [
+
+                    {
+                        number: "01",
+
+                        eyebrow:
+                            "RABBI DR. JACK COHEN",
+
+                        title:
+                            "Many People Want to Be Accepted for Who They Are",
+
+                        category:
+                            "DATING · RELATIONSHIPS",
+
+                        youtubeId:
+                            "-C8fJ0LGiq8"
+                    },
+
+
+                    {
+                        number: "02",
+
+                        eyebrow:
+                            "JEWISH MATCHMAKING INSPIRATION #7",
+
+                        title:
+                            "Why I Decided to Participate in This Netflix Series",
+
+                        category:
+                            "MATCHMAKING · NETFLIX",
+
+                        youtubeId:
+                            "IAdFvX9Ej2c"
+                    },
+
+
+                    {
+                        number: "03",
+
+                        eyebrow:
+                            "JEWISH MATCHMAKING INSPIRATION #3",
+
+                        title:
+                            "In Jewish Dating, We Choose With Our Head, Not Our Heart",
+
+                        category:
+                            "DATING · CLARITY",
+
+                        youtubeId:
+                            "BrNwoP3eauw"
+                    },
+
+
+                    {
+                        number: "04",
+
+                        eyebrow:
+                            "JEWISH HISTORY",
+
+                        title:
+                            "Escape From Nazi Germany on the 8th Day of Chanukah",
+
+                        category:
+                            "FAITH · CHANUKAH",
+
+                        youtubeId:
+                            "EgGvNoLif_4"
+                    },
+
+
+                    {
+                        number: "05",
+
+                        eyebrow:
+                            "MARRIAGE",
+
+                        title:
+                            "Couple Married for 91 Years and Still in Love",
+
+                        category:
+                            "LOVE · MARRIAGE",
+
+                        youtubeId:
+                            "WCUBFLsxW-k"
+                    },
+
+
+                    {
+                        number: "06",
+
+                        eyebrow:
+                            "DATING",
+
+                        title:
+                            "Can I Successfully Date Someone From Another Country?",
+
+                        category:
+                            "LONG-DISTANCE · DATING",
+
+                        youtubeId:
+                            "zwdfOsFL-L0"
+                    },
+
+
+                    {
+                        number: "07",
+
+                        eyebrow:
+                            "CLARITY",
+
+                        title:
+                            "Would THAT Make You Happy? What Are Your Needs vs Your Wants?",
+
+                        category:
+                            "HAPPINESS · EXPECTATIONS",
+
+                        youtubeId:
+                            "fAOXpokgj-8"
+                    },
+
+
+                    {
+                        number: "08",
+
+                        eyebrow:
+                            "THE 5 LOVE LANGUAGES",
+
+                        title:
+                            "The 5 Love Languages: Receiving Gifts",
+
+                        category:
+                            "MARRIAGE · COMMUNICATION",
+
+                        youtubeId:
+                            "CYFQquxaEkE"
+                    },
+
+
+                    {
+                        number: "09",
+
+                        eyebrow:
+                            "JEWISH HISTORY",
+
+                        title:
+                            "Titus Failed — He Could Not Get Rid of the Jews",
+
+                        category:
+                            "JEWISH HISTORY · FAITH",
+
+                        youtubeId:
+                            "8IMZa1Fdm5E"
+                    },
+
+
+                    {
+                        number: "10",
+
+                        eyebrow:
+                            "SHIDDUCH DATING",
+
+                        title:
+                            "Toronto Shidduch Initiative Assembly on Dating",
+
+                        category:
+                            "DATING · SHIDDUCHIM",
+
+                        youtubeId:
+                            "9jbocxtNeJY"
+                    },
+
+
+                    {
+                        number: "11",
+
+                        eyebrow:
+                            "MARRIAGE",
+
+                        title:
+                            "Marriage Will Make Your Problems Worse!",
+
+                        category:
+                            "MARRIAGE · SELF-AWARENESS",
+
+                        youtubeId:
+                            "TnIYPy_y63o"
+                    },
+
+
+                    {
+                        number: "12",
+
+                        eyebrow:
+                            "PERSPECTIVE",
+
+                        title:
+                            "There’s No Lasting Bliss on This Earth",
+
+                        category:
+                            "HAPPINESS · PERSPECTIVE",
+
+                        youtubeId:
+                            "64O4DgEI9Wg"
+                    },
+
+
+                    {
+                        number: "13",
+
+                        eyebrow:
+                            "MARRIAGE",
+
+                        title:
+                            "In Marriage, What Happens If They Don't Love Their Partner Like They Used To?",
+
+                        category:
+                            "LOVE · MARRIAGE",
+
+                        youtubeId:
+                            "lScO_k92qwE"
+                    },
+
+
+                    {
+                        number: "14",
+
+                        eyebrow:
+                            "WISDOM OF THE REBBE",
+
+                        title:
+                            "How to Build an Everlasting Marriage",
+
+                        category:
+                            "TORAH · MARRIAGE",
+
+                        youtubeId:
+                            "OfFsjSSjfcA"
+                    },
+
+
+                    {
+                        number: "15",
+
+                        eyebrow:
+                            "EMUNAH",
+
+                        title:
+                            "Happiness, Wealth, Good Health and Beracha — You Can Only Choose One!",
+
+                        category:
+                            "FAITH · HAPPINESS",
+
+                        youtubeId:
+                            "saPBpLDMKlM"
+                    },
+
+
+                    {
+                        number: "16",
+
+                        eyebrow:
+                            "THE 5 LOVE LANGUAGES",
+
+                        title:
+                            "The 5 Love Languages — Part 2",
+
+                        category:
+                            "LOVE · COMMUNICATION",
+
+                        youtubeId:
+                            "fqKpFTcOps4"
+                    },
+
+
+                    {
+                        number: "17",
+
+                        eyebrow:
+                            "MARRIAGE · FAMILY",
+
+                        title:
+                            "My Spouse or My Parents: Who Do I Side With?",
+
+                        category:
+                            "FAMILY · MARRIAGE",
+
+                        youtubeId:
+                            "mPaJHZ3wzSc"
+                    }
+
+                ];
+
+
+                /* ==================================================
+                   ELEMENTS
+                   ================================================== */
+
+                const lectureGrid =
+                    document.getElementById(
+                        "lectureGrid"
+                    );
+
+
+                const lectureModal =
+                    document.getElementById(
+                        "lectureModal"
+                    );
+
+
+                const lectureModalFrame =
+                    document.getElementById(
+                        "lectureModalFrame"
+                    );
+
+
+                const lectureModalTitle =
+                    document.getElementById(
+                        "lectureModalTitle"
+                    );
+
+
+                const lectureModalEyebrow =
+                    document.getElementById(
+                        "lectureModalEyebrow"
+                    );
+
+
+                const lectureModalClose =
+                    document.getElementById(
+                        "lectureModalClose"
+                    );
+
+
+                /* ==================================================
+                   OPEN VIDEO
+                   ================================================== */
+
+                function openLecture(
+                    lecture
+                ) {
+
+
+                    lectureModalTitle.textContent =
+                        lecture.title;
+
+
+                    lectureModalEyebrow.textContent =
+                        lecture.eyebrow +
+                        " · VIDEO LECTURE";
+
+
+                    lectureModalFrame.src =
+                        "https://www.youtube-nocookie.com/embed/" +
+                        encodeURIComponent(
+                            lecture.youtubeId
+                        ) +
+                        "?autoplay=1&rel=0&playsinline=1";
+
+
+                    lectureModal.classList.add(
+                        "open"
+                    );
+
+
+                    lectureModal.setAttribute(
+                        "aria-hidden",
+                        "false"
+                    );
+
+
+                    document.body.style.overflow =
+                        "hidden";
+
+
+                }
+
+
+                /* ==================================================
+                   CLOSE VIDEO
+                   ================================================== */
+
+                function closeLecture() {
+
+
+                    lectureModal.classList.remove(
+                        "open"
+                    );
+
+
+                    lectureModal.setAttribute(
+                        "aria-hidden",
+                        "true"
+                    );
+
+
+                    lectureModalFrame.src =
+                        "";
+
+
+                    document.body.style.overflow =
+                        "";
+
+
+                }
+
+
+                /* ==================================================
+                   BUILD CARDS
+                   ================================================== */
+
+                lectures.forEach(
+                    function (
+                        lecture
+                    ) {
+
+
+                        const card =
+                            document.createElement(
+                                "button"
+                            );
+
+
+                        card.type =
+                            "button";
+
+
+                        card.className =
+                            "lecture-card";
+
+
+                        /*
+                         Automatically reduce the font size
+                         for unusually long lecture titles.
+                        */
+
+                        if (
+                            lecture.title.length > 72
+                        ) {
+
+                            card.classList.add(
+                                "very-long-title"
+                            );
+
+                        }
+
+                        else if (
+                            lecture.title.length > 52
+                        ) {
+
+                            card.classList.add(
+                                "long-title"
+                            );
+
+                        }
+
+
+                        card.dataset.title =
+                            (
+                                lecture.title +
+                                " " +
+                                lecture.category +
+                                " " +
+                                lecture.eyebrow
+                            );
+
+
+                        card.setAttribute(
+                            "aria-label",
+                            "Play " +
+                            lecture.title
+                        );
+
+
+                        /*
+                         IMPORTANT:
+
+                         There is deliberately NO
+                         lecture-thumbnail-category
+                         inside the thumbnail anymore.
+
+                         Category only appears BELOW
+                         the image.
+                        */
+
+                        card.innerHTML = `
+
+                            <div class="lecture-thumbnail">
+<img
+                                    src="assets/images/lectures/dr-jack-lecture-thumbnail.png"
+                                    alt="${lecture.title}"
+                                    class="lecture-thumbnail-image"
+                                >
+<div
+                                    class="lecture-thumbnail-navy"
+                                ></div>
+<div
+                                    class="lecture-thumbnail-wash"
+                                ></div>
+<div
+                                    class="lecture-thumbnail-seam"
+                                ></div>
+<span
+                                    class="lecture-number"
+                                >
+                                    ${lecture.number}
+                                </span>
+<div
+                                    class="lecture-thumbnail-copy"
+                                >
+<small>
+                                        ${lecture.eyebrow}
+                                    </small>
+<h3>
+                                        ${lecture.title}
+                                    </h3>
+</div>
+<span
+                                    class="lecture-play"
+                                    aria-hidden="true"
+                                ></span>
+</div>
+<div class="lecture-copy">
+<small>
+                                    ${lecture.category}
+                                </small>
+<strong>
+
+                                    Play Lecture
+
+                                    
+
+                                </strong>
+</div>
+
+                        `;
+
+
+                        card.addEventListener(
+                            "click",
+                            function () {
+
+                                openLecture(
+                                    lecture
+                                );
+
+                            }
+                        );
+
+
+                        lectureGrid.appendChild(
+                            card
+                        );
+
+
+                    }
+                );
+
+
+                /* ==================================================
+                   CLOSE BUTTON
+                   ================================================== */
+
+                lectureModalClose.addEventListener(
+                    "click",
+                    closeLecture
+                );
+
+
+                /* ==================================================
+                   CLICK DARK BACKGROUND
+                   ================================================== */
+
+                lectureModal.addEventListener(
+                    "click",
+                    function (
+                        event
+                    ) {
+
+
+                        if (
+                            event.target ===
+                            lectureModal
+                        ) {
+
+                            closeLecture();
+
+                        }
+
+
+                    }
+                );
+
+
+                /* ==================================================
+                   ESC KEY
+                   ================================================== */
+
+                document.addEventListener(
+                    "keydown",
+                    function (
+                        event
+                    ) {
+
+
+                        if (
+                            event.key ===
+                            "Escape" &&
+                            lectureModal
+                                .classList
+                                .contains(
+                                    "open"
+                                )
+                        ) {
+
+                            closeLecture();
+
+                        }
+
+
+                    }
+                );
+
+
+                /* ==================================================
+                   SEARCH
+                   ================================================== */
+
+                const searchInput =
+                    document.getElementById(
+                        "lectureSearch"
+                    );
+
+
+                const lectureEmpty =
+                    document.getElementById(
+                        "lectureEmpty"
+                    );
+
+
+                function normalizeText(
+                    text
+                ) {
+
+
+                    return text
+                        .toLowerCase()
+                        .normalize("NFD")
+                        .replace(
+                            /[\u0300-\u036f]/g,
+                            ""
+                        )
+                        .replace(
+                            /[^\w\s]/g,
+                            " "
+                        )
+                        .replace(
+                            /\s+/g,
+                            " "
+                        )
+                        .trim();
+
+
+                }
+
+
+                function filterLectures() {
+
+
+                    const query =
+                        normalizeText(
+                            searchInput.value
+                        );
+
+
+                    const cards =
+                        Array.from(
+                            document.querySelectorAll(
+                                ".lecture-card"
+                            )
+                        );
+
+
+                    let visible =
+                        0;
+
+
+                    cards.forEach(
+                        function (
+                            card
+                        ) {
+
+
+                            const haystack =
+                                normalizeText(
+                                    card.dataset.title ||
+                                    ""
+                                );
+
+
+                            const matches =
+                                query === "" ||
+                                haystack.includes(
+                                    query
+                                );
+
+
+                            card.hidden =
+                                !matches;
+
+
+                            if (
+                                matches
+                            ) {
+
+                                visible += 1;
+
+                            }
+
+
+                        }
+                    );
+
+
+                    lectureEmpty
+                        .classList
+                        .toggle(
+                            "show",
+                            visible === 0
+                        );
+
+
+                }
+
+
+                if (
+                    searchInput
+                ) {
+
+
+                    searchInput.addEventListener(
+                        "input",
+                        filterLectures
+                    );
+
+
+                }
+
+
+                /* ==================================================
+                   MOBILE NAVIGATION
+                   ================================================== */
+
+                const menuButton =
+                    document.getElementById(
+                        "mobileMenuButton"
+                    );
+
+
+                const mobileNavigation =
+                    document.getElementById(
+                        "mobileNavigation"
+                    );
+
+
+                const servicesButton =
+                    document.getElementById(
+                        "mobileServicesButton"
+                    );
+
+
+                const servicesMenu =
+                    document.getElementById(
+                        "mobileServicesMenu"
+                    );
+
+
+                if (
+                    menuButton &&
+                    mobileNavigation
+                ) {
+
+
+                    menuButton.addEventListener(
+                        "click",
+                        function () {
+
+
+                            const open =
+                                mobileNavigation
+                                    .classList
+                                    .toggle(
+                                        "open"
+                                    );
+
+
+                            menuButton.setAttribute(
+                                "aria-expanded",
+                                open
+                                    ? "true"
+                                    : "false"
+                            );
+
+
+                            document.body
+                                .classList
+                                .toggle(
+                                    "menu-open",
+                                    open
+                                );
+
+
+                        }
+                    );
+
+
+                }
+
+
+                if (
+                    servicesButton &&
+                    servicesMenu
+                ) {
+
+
+                    servicesButton.addEventListener(
+                        "click",
+                        function () {
+
+
+                            servicesMenu
+                                .classList
+                                .toggle(
+                                    "open"
+                                );
+
+
+                        }
+                    );
+
+
+                }
+
+
+            }
+        );
+
+    </script>
+</body>
+</html>
