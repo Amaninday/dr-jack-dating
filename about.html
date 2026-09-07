@@ -1835,16 +1835,14 @@
         pointer-events: auto !important;
     }
 
-    .mobile-services-button .services-dropdown-arrow,
-    .mobile-services-button > span:last-child {
+    .mobile-services-button .services-dropdown-arrow {
         margin-left: 12px !important;
         color: #e7b241 !important;
         font-size: 14px !important;
         transition: transform .2s ease !important;
     }
 
-    .mobile-services-button[aria-expanded="true"] .services-dropdown-arrow,
-    .mobile-services-button[aria-expanded="true"] > span:last-child {
+    .mobile-services-button[aria-expanded="true"] .services-dropdown-arrow {
         transform: rotate(180deg) !important;
     }
 
@@ -1952,6 +1950,90 @@
 }
 
 </style>
+
+
+<style id="mobile-services-arrow-normalization-20260907">
+/* =========================================================
+   MOBILE SERVICES DROPDOWN — CONSISTENT ON ALL ROOT PAGES
+   White "Services" label + yellow down-arrow, matching
+   the working Services subpages.
+   ========================================================= */
+
+@media (max-width: 900px) {
+    .mobile-services-button {
+        color: #ffffff !important;
+        transform: none !important;
+    }
+
+    .mobile-services-button::before,
+    .mobile-services-button::after {
+        content: none !important;
+        display: none !important;
+    }
+
+    .mobile-services-button .mobile-services-label {
+        display: inline-block !important;
+        color: #ffffff !important;
+        transform: none !important;
+    }
+
+    .mobile-services-button .services-dropdown-arrow {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin-left: auto !important;
+
+        color: #e7b241 !important;
+
+        font-family: Arial, sans-serif !important;
+        font-size: 16px !important;
+        font-weight: 800 !important;
+        line-height: 1 !important;
+
+        transform: rotate(0deg) !important;
+        transform-origin: center !important;
+        transition: transform .2s ease !important;
+    }
+
+    .mobile-services-button[aria-expanded="true"] .mobile-services-label {
+        color: #ffffff !important;
+        transform: none !important;
+    }
+
+    .mobile-services-button[aria-expanded="true"] .services-dropdown-arrow {
+        color: #e7b241 !important;
+        transform: rotate(180deg) !important;
+    }
+}
+</style>
+
+
+
+<style id="about-mobile-hero-gap-fix-20260907">
+/* ABOUT MOBILE ONLY — remove inherited 690/720px copy min-height
+   that created the large empty navy gap between image and copy. */
+@media (max-width: 640px) {
+    .about-page-hero-copy {
+        min-height: 0 !important;
+        height: auto !important;
+        display: block !important;
+        justify-content: flex-start !important;
+        margin: 0 !important;
+        padding: 28px 24px 40px !important;
+    }
+
+    .about-page-hero-image {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .about-page-hero-image img {
+        margin: 0 !important;
+    }
+}
+</style>
+
 </head>
 <body>
 <!-- ======================================================
@@ -2028,8 +2110,9 @@ Services
                 Home</a>
 <a href="about.html">
                 Meet Dr. Jack</a>
-<button class="mobile-services-button" id="mobileServicesButton" type="button">
-<span>Services</span>
+<button class="mobile-services-button" id="mobileServicesButton" type="button" aria-expanded="false">
+<span class="mobile-services-label">Services</span>
+<span class="services-dropdown-arrow" aria-hidden="true">▾</span>
 </button>
 <div class="mobile-services-menu" id="mobileServicesMenu">
 <a href="services/dating.html">
