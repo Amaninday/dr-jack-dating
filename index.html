@@ -86,6 +86,11 @@ Rabbi Dr. Jack Cohen | Date With Clarity. Marry With Confidence.
 .home-video-frame-wrap{position:relative !important; width:100% !important; aspect-ratio:16/9 !important; background:#000 !important;}
 .home-video-frame-wrap iframe{position:absolute !important; inset:0 !important; width:100% !important; height:100% !important; border:0 !important; display:block !important;}
 
+.home-video-conversion{padding:24px 26px 28px !important; text-align:center !important; background:linear-gradient(180deg,#031522 0%,#062238 100%) !important; border-top:1px solid rgba(255,255,255,.08) !important;}
+.home-video-conversion p{margin:0 0 14px !important; color:#fff !important; font-family:var(--font-serif,"Playfair Display",Georgia,serif) !important; font-size:clamp(22px,2vw,30px) !important; font-weight:700 !important; line-height:1.15 !important;}
+.home-video-conversion a{display:inline-flex !important; align-items:center !important; justify-content:center !important; min-height:52px !important; padding:0 24px !important; border-radius:999px !important; background:#e3b54f !important; color:#08243a !important; text-decoration:none !important; font:900 13px/1.2 var(--font-display,"DM Sans",Arial,sans-serif) !important; letter-spacing:.02em !important; box-shadow:0 12px 28px rgba(0,0,0,.2) !important;}
+.home-video-conversion a:hover{transform:translateY(-1px) !important; filter:brightness(1.03) !important;}
+
 @media(max-width:1000px){
     #free-ebook .ebook-offer-inner{grid-template-columns:.8fr 1.2fr !important; width:min(100% - 40px,1200px) !important;}
     #free-ebook .ebook-offer-copy{padding-left:18px !important;}
@@ -992,7 +997,6 @@ Rabbi Dr. Jack Cohen | Date With Clarity. Marry With Confidence.
 
 #free-ebook .ebook-offer-inner {
     min-height: 780px !important;
-
     width: min(1540px, calc(100% - 64px)) !important;
 
     grid-template-columns:
@@ -1503,6 +1507,15 @@ body.article-modal-open {
     margin-bottom: 11px;
 }
 
+.article-modal-conversion-copy {
+    margin: 38px 0 14px;
+    color: #0a2a43;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(24px, 2.4vw, 34px);
+    font-weight: 700;
+    line-height: 1.15;
+}
+
 .article-modal-cta {
     margin-top: 38px;
 
@@ -1897,6 +1910,29 @@ body.article-modal-open {
 @media(max-width:760px){.dj-additional-cta{padding:38px 22px}.dj-additional-cta__inner{grid-template-columns:1fr;gap:24px}.dj-additional-cta__title{font-size:clamp(30px,9vw,40px)}.dj-additional-cta__description{font-size:15px}.dj-additional-cta__button{width:100%;min-width:0}.dj-additional-cta--library{margin:8px 0 18px;padding:32px 22px;border-radius:14px}}
 </style>
 <!-- DJ-ADDITIONAL-CTA-STYLES-20260907-END -->
+
+<style id="home-authority-proof-update">
+.home-authority-proof{background:#f7f3ec;padding:78px 0 82px;color:#0b1f33;border-top:1px solid rgba(11,31,51,.08);border-bottom:1px solid rgba(11,31,51,.08)}
+.home-authority-inner{display:grid;grid-template-columns:minmax(280px,.9fr) minmax(520px,1.35fr);gap:54px 70px;align-items:end}
+.home-authority-intro h2{margin:10px 0 16px;font-family:var(--font-serif,"Playfair Display",Georgia,serif);font-size:clamp(42px,4vw,68px);line-height:.98;letter-spacing:-.045em;color:#0b1f33}
+.home-authority-intro>p:last-child{margin:0;max-width:590px;color:#667085;font-size:17px;line-height:1.65}
+.home-authority-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.home-authority-stat{min-height:172px;padding:28px 24px;border:1px solid rgba(11,31,51,.11);border-radius:20px;background:#fff;display:flex;flex-direction:column;justify-content:center;box-shadow:0 14px 36px rgba(11,31,51,.06)}
+.home-authority-stat strong{display:block;color:#c6a15b;font-family:var(--font-serif,"Playfair Display",Georgia,serif);font-size:clamp(42px,4.2vw,68px);line-height:.9;letter-spacing:-.05em}
+.home-authority-stat span{display:block;margin-top:14px;color:#263442;font:800 12px/1.35 var(--font-display,"Manrope",Arial,sans-serif);letter-spacing:.08em;text-transform:uppercase}
+.home-authority-note{grid-column:1/-1;padding-top:4px;color:#263442;font:700 13px/1.6 var(--font-display,"Manrope",Arial,sans-serif);letter-spacing:.045em;text-transform:uppercase;text-align:center}
+.home-authority-note em{font-style:normal;color:#a87928}
+@media(max-width:900px){.home-authority-inner{grid-template-columns:1fr}.home-authority-stats{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:640px){.home-authority-proof{padding:62px 0 66px}.home-authority-stats{grid-template-columns:1fr}.home-authority-stat{min-height:138px}.home-authority-note{text-align:left}}
+</style>
+
+<style id="home-assessment-pathway-mobile">
+@media(max-width:760px){
+.home-assessment-pathway>div{flex-direction:column!important;align-items:flex-start!important;padding:30px 24px!important}
+.home-assessment-pathway a{width:100%!important;box-sizing:border-box!important}
+}
+</style>
+
 </head>
 <body>
 <!-- =====================================================
@@ -1960,8 +1996,7 @@ BEFORE MARRIAGE
 </small>
 <span>
 Pre-Marriage Guidance
-</span>
-</a>
+</span></a>
 <a href="services/events-speaking.html">
 <small>
 LECTURES &amp; EVENTS
@@ -2062,16 +2097,15 @@ GET EXPERT GUIDANCE.
 </span>
 </h1>
 <p class="hero-description">
-Get clear, private guidance from <strong>Rabbi Dr. Jack Cohen</strong>
-to understand what’s really happening, what’s keeping you stuck,
-and what to do next.
+Private, practical guidance from <strong>Rabbi Dr. Jack Cohen</strong>
+for Jewish singles and couples who want clarity before making an important relationship decision.
 </p>
 <div class="hero-actions">
 <a class="button button-gold" href="booking.html">
 Book a Consult Now!</a>
-<a class="hero-secondary-link" href="#services">
-EXPLORE HOW DR. JACK CAN HELP
-<span>↓</span>
+<a class="hero-secondary-link" href="assessment.html">
+TAKE THE 3-MINUTE CLARITY ASSESSMENT
+<span>→</span>
 </a>
 </div>
 <p class="hero-credentials">
@@ -2079,7 +2113,7 @@ EXPLORE HOW DR. JACK CAN HELP
 Rabbi Dr. Jack Cohen
 </strong>
 <span>
-Dating Coach · Marriage Coach · Matchmaker
+Dating Coach · Shadchan · Lecturer
 </span>
 </p>
 </div>
@@ -2104,22 +2138,38 @@ ENDLESS MEDIA LOGO STRIP
 </div>
 </section>
 <!-- =====================================================
+AUTHORITY / PROOF
+====================================================== -->
+<section class="home-authority-proof" aria-label="Dr. Jack experience and results">
+<div class="container home-authority-inner">
+<div class="home-authority-intro">
+<p class="section-label">WHY DR. JACK</p>
+<h2>Experience that speaks for itself.</h2>
+<p>Decades inside Jewish dating, matchmaking, relationships and community events—grounded in real conversations and real outcomes.</p>
+</div>
+<div class="home-authority-stats">
+<div class="home-authority-stat"><strong>25</strong><span>Years of Experience</span></div>
+<div class="home-authority-stat"><strong>1,000+</strong><span>Events</span></div>
+<div class="home-authority-stat"><strong>500+</strong><span>Couples Matched</span></div>
+</div>
+<div class="home-authority-note">Dating Coach · Shadchan · Lecturer · Featured on Netflix’s <em>Jewish Matchmaking</em>, Season 1</div>
+</div>
+</section>
+<!-- =====================================================
 PROBLEM
 ====================================================== -->
 <section class="problem-section">
 <div class="container">
 <div class="problem-heading">
 <p class="section-label">
-WHEN YOU'RE TOO CLOSE TO THE SITUATION
+IF THIS FEELS FAMILIAR
 </p>
 <h2>
-The hardest relationship decisions are often
-the ones you can't see clearly on your own.
+You keep trying to move forward.
+But the same questions keep coming back.
 </h2>
 <p class="problem-heading-copy">
-You may be intelligent, thoughtful and serious about
-building the right relationship—and still find yourself
-stuck in the same questions.
+You do not need more opinions. You need enough clarity to understand what deserves your next step.
 </p>
 </div>
 <div class="problem-grid">
@@ -2128,12 +2178,10 @@ stuck in the same questions.
 01
 </span>
 <h3>
-Why am I still single?
+You are tired of starting over.
 </h3>
 <p>
-Understand whether the pattern is who you choose,
-who you reject, what you expect, or what happens
-once a promising relationship begins.
+Dates happen, possibilities appear, but marriage still feels no closer.
 </p>
 </article>
 <article>
@@ -2141,11 +2189,10 @@ once a promising relationship begins.
 02
 </span>
 <h3>
-Should I continue this relationship?
+You cannot tell what is a real concern.
 </h3>
 <p>
-Separate meaningful concerns from fear,
-overthinking, pressure and unrealistic expectations.
+Is it a red flag, fear, pressure—or simply uncertainty?
 </p>
 </article>
 <article>
@@ -2153,12 +2200,10 @@ overthinking, pressure and unrealistic expectations.
 03
 </span>
 <h3>
-Why do we keep having the same conflict?
+The same relationship patterns keep returning.
 </h3>
 <p>
-Slow the pattern down, identify what is actually
-happening underneath the argument, and determine
-what needs to change.
+You know something needs to change, but you are not sure what.
 </p>
 </article>
 </div>
@@ -2175,13 +2220,11 @@ SERVICES
 HOW DR. JACK CAN HELP
 </p>
 <h2>
-Start with the situation you're actually facing.
+Choose the support that fits where you are now.
 </h2>
 </div>
 <p>
-Different relationship problems require different
-conversations. Choose the area that most closely
-matches what you're trying to understand.
+Each path is different. Start with the one that feels closest to what you are facing.
 </p>
 </div>
 <div class="services-grid">
@@ -2197,8 +2240,7 @@ FOR SINGLES
 Dating Guidance
 </h3>
 <p>
-Recognize patterns, clarify what matters,
-and date with greater intention.
+Stop repeating the same dating patterns and move forward with more clarity.
 </p>
 <b>
 EXPLORE DATING GUIDANCE</b>
@@ -2216,8 +2258,7 @@ FOR A PERSONAL INTRODUCTION
 Matchmaking
 </h3>
 <p>
-Thoughtful introductions built around values,
-character, compatibility and direction.
+Personal introductions shaped by values, character and long-term direction.
 </p>
 <b>
 EXPLORE MATCHMAKING</b>
@@ -2235,8 +2276,7 @@ FOR RELATIONSHIP DECISIONS
 Relationship Clarity
 </h3>
 <p>
-Understand whether the relationship
-should continue, progress or end.
+See the relationship more clearly before deciding what comes next.
 </p>
 <b>
 GET CLARITY</b>
@@ -2254,8 +2294,7 @@ FOR COUPLES
 Marriage Guidance
 </h3>
 <p>
-Work through conflict, resentment,
-communication problems and emotional distance.
+Get perspective on recurring conflict, communication and emotional distance.
 </p>
 <b>
 EXPLORE MARRIAGE GUIDANCE</b>
@@ -2273,8 +2312,7 @@ BEFORE MARRIAGE
 Pre-Marriage Guidance
 </h3>
 <p>
-Build stronger clarity, communication
-and expectations before marriage.
+Enter marriage with clearer expectations, communication and direction.
 </p>
 <b>
 EXPLORE PRE-MARRIAGE</b>
@@ -2292,11 +2330,7 @@ EXPLORE SPEAKING &amp; EVENTS</a>
 </div>
 </div>
 </section>
-<!-- DJ-ADDITIONAL-CTA-home-services-START -->
-<aside class="dj-additional-cta" data-dj-additional-cta="home-services" aria-label="Private consultation">
-<div class="dj-additional-cta__inner"><div class="dj-additional-cta__copy"><p class="dj-additional-cta__eyebrow">NEED A STARTING POINT?</p><h2 class="dj-additional-cta__title">Not sure which kind of guidance fits your situation?</h2><p class="dj-additional-cta__description">Start with a private conversation. Dr. Jack can help you identify what is actually happening and what kind of support makes sense.</p></div><a class="dj-additional-cta__button" href="booking.html">Book a Consult Now!</a></div>
-</aside>
-<!-- DJ-ADDITIONAL-CTA-home-services-END -->
+
 
 <!-- =====================================================
 APPROACH
@@ -2308,22 +2342,16 @@ APPROACH
 </div>
 <div class="approach-copy">
 <p class="section-label section-label-gold">
-DR. JACK'S APPROACH
+WHY DR. JACK
 </p>
 <h2>
 Clarity before decision.
 </h2>
 <blockquote>
-“My role is not to make your decision for you.
-It is to help you see yourself, the other person,
-and the relationship clearly enough to make
-a wiser decision.”
+“My role is not to make your decision for you. It is to help you see the situation clearly enough to make a wiser one.”
 </blockquote>
 <p>
-Good guidance does not tell you what you want to hear.
-It helps you slow down the pattern, understand what
-matters, separate fear from reality, and make
-decisions with greater clarity.
+Rabbi Dr. Jack Cohen brings professional insight, Jewish values and years of real-world matchmaking and relationship experience into one private conversation.
 </p>
 <a class="approach-link" href="about.html">
 MEET DR. JACK</a>
@@ -2366,57 +2394,8 @@ SUCCESS STORIES · TR LAYOUT
 </div>
 </div>
 </section>
-<!-- DJ-ADDITIONAL-CTA-home-success-START -->
-<aside class="dj-additional-cta" data-dj-additional-cta="home-success" aria-label="Private consultation">
-<div class="dj-additional-cta__inner"><div class="dj-additional-cta__copy"><p class="dj-additional-cta__eyebrow">WHEN THE STORY IS STILL UNCLEAR</p><h2 class="dj-additional-cta__title">Your situation does not have to stay unresolved.</h2><p class="dj-additional-cta__description">Sometimes one clear conversation can change the way you see the relationship, the decision, or the pattern you keep repeating.</p></div><a class="dj-additional-cta__button" href="booking.html">Book a Consult Now!</a></div>
-</aside>
-<!-- DJ-ADDITIONAL-CTA-home-success-END -->
 
-<!-- =====================================================
-ABOUT
-====================================================== -->
-<section class="about-preview">
-<div class="container about-layout">
-<div class="about-image-wrap">
-<img alt="Rabbi Dr. Jack Cohen in his study" src="assets/images/about/dr-jack-study.png"/>
-</div>
-<div class="about-copy">
-<p class="section-label">
-MEET DR. JACK
-</p>
-<h2>
-Rabbi. Former physician.
-Dating &amp; marriage expert.
-</h2>
-<p>
-Decades of experience helping people understand relationships,
-make difficult decisions, and build stronger marriages.
-</p>
-<div class="credentials-grid">
-<span>
-Dating Coach
-</span>
-<span>
-Marriage Coach
-</span>
-<span>
-Matchmaker
-</span>
-<span>
-Rabbi
-</span>
-<span>
-Former Physician
-</span>
-<span>
-Lecturer
-</span>
-</div>
-<a class="button button-navy" href="about.html">
-MEET DR. JACK</a>
-</div>
-</div>
-</section>
+
 <!-- =====================================================
 FREE EBOOK — THE ART OF JEWISH MATCHMAKING
 ====================================================== -->
@@ -2428,8 +2407,8 @@ FREE EBOOK — THE ART OF JEWISH MATCHMAKING
 <p class="ebook-kicker">FREE EBOOK</p>
 <h2>Love isn’t left to chance—<em>it’s an art form.</em></h2>
 <div aria-hidden="true" class="ebook-rule"></div>
-<p>Dating apps can only take you so far. True, lasting connection requires a foundation built on shared values and timeless wisdom.</p>
-<p>In <strong>The Art of Jewish Matchmaking</strong>, Rabbi Dr. Jack Cohen blends spiritual insight with practical, real-world guidance to help you approach dating with greater clarity and intention.</p>
+<p>Dating apps can only take you so far. Lasting connection asks for clarity, shared values and intention.</p>
+<p>Get Dr. Jack’s complimentary guide to approaching Jewish dating with a clearer perspective.</p>
 <p class="ebook-offer-line">Get your complimentary copy today.</p>
 <form class="ebook-form" id="guideForm">
 <input autocomplete="given-name" id="guideName" name="name" placeholder="First Name" required="" type="text"/>
@@ -2448,9 +2427,9 @@ LECTURES
 <div class="home-featured-heading">
 <div>
 <p class="home-featured-kicker">WATCH DR. JACK</p>
-<h2>Practical guidance you can start thinking about now.</h2>
+<h2>Watch Dr. Jack answer the questions people actually ask.</h2>
 </div>
-<p>Selected guidance on dating decisions, relationship clarity and building a lasting marriage.</p>
+<p>Short teachings on dating, clarity and marriage—then take the next step when the question becomes personal.</p>
 </div>
 <div class="home-featured-grid">
 <button class="home-featured-card long-title" data-eyebrow="JEWISH MATCHMAKING INSPIRATION #3" data-title="In Jewish Dating, We Choose With Our Head, Not Our Heart" data-youtube="BrNwoP3eauw" type="button">
@@ -2521,7 +2500,7 @@ INSIGHTS
 DR. JACK'S INSIGHTS
 </p>
 <h2>
-Questions you're probably already asking yourself.
+Start with the question already on your mind.
 </h2>
 </div>
 <div class="insights-grid">
@@ -2574,6 +2553,18 @@ EXPLORE ALL INSIGHTS</a>
 </div>
 </div>
 </section>
+
+<section class="home-assessment-pathway" style="padding:72px 24px;background:#fff;">
+<div style="width:min(1120px,100%);margin:0 auto;border:1px solid rgba(16,40,58,.12);border-radius:24px;padding:42px;display:flex;align-items:center;justify-content:space-between;gap:30px;background:linear-gradient(135deg,#f8f4ec,#fff);">
+<div style="max-width:720px;">
+<p style="margin:0 0 10px;color:#a87928;font:800 11px/1.2 Manrope,sans-serif;letter-spacing:.15em;text-transform:uppercase;">NOT SURE WHERE TO START?</p>
+<h2 style="margin:0;color:#10283a;font:700 clamp(34px,4vw,54px)/1.05 'Playfair Display',serif;letter-spacing:-.035em;">Take the Clarity Assessment before you book.</h2>
+<p style="margin:16px 0 0;color:#68737c;font:400 17px/1.65 'DM Sans',sans-serif;">Answer a few private questions and receive a recommended Dr. Jack service and support level based on your situation.</p>
+</div>
+<a href="assessment.html" style="flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:16px 28px;border-radius:999px;background:#dfb452;color:#031522;text-decoration:none;font:900 13px/1 Manrope,sans-serif;">START THE ASSESSMENT →</a>
+</div>
+</section>
+
 <!-- =====================================================
 FINAL CTA
 ====================================================== -->
@@ -2586,12 +2577,10 @@ FINAL CTA
             GET CLARITY ABOUT WHAT TO DO NEXT
         </p>
 <h2>
-            You don't need another year of second-guessing.
+            Stop wondering what you are missing.
         </h2>
 <p class="consultation-description">
-            Whether you're dating, deciding about a relationship,
-            or struggling in your marriage, you don't have
-            to figure it out alone.
+            Bring Dr. Jack the real situation. Leave with a clearer understanding of what to look at next.
         </p>
 <a class="button consultation-button" href="booking.html">
             Book a Consult Now!</a>
@@ -2636,9 +2625,11 @@ HOMEPAGE LECTURE VIDEO MODAL
             <div class="article-modal-body"
                  id="homeArticleModalBody"></div>
 
+            <p class="article-modal-conversion-copy">Does this sound like you?</p>
+
             <a class="article-modal-cta"
                href="booking.html">
-                DISCUSS THIS WITH DR. JACK
+                BOOK YOUR CONSULT WITH DR. JACK
             </a>
         </article>
     </div>
@@ -2655,6 +2646,10 @@ HOMEPAGE LECTURE VIDEO MODAL
 </div>
 <div class="home-video-frame-wrap">
 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" id="homeVideoFrame" src="" title="Rabbi Dr. Jack Cohen video lecture"></iframe>
+</div>
+<div class="home-video-conversion">
+<p>Does this sound like you?</p>
+<a href="booking.html">BOOK YOUR CONSULT WITH DR. JACK</a>
 </div>
 </div>
 </div>
